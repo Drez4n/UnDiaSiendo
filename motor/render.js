@@ -41,7 +41,7 @@ async function pagina(browser) {
     const a = f0 + h * tramo, b = Math.min(f1, a + tramo); if (a >= b) return;
     const p = await pagina(browser);
     const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-',
-      '-c:v', 'libx264', '-preset', 'medium', '-crf', '17', '-pix_fmt', 'yuv420p', path.join(tmp, `parte${h}.mp4`)]);
+      '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', path.join(tmp, `parte${h}.mp4`)]);
     for (let f = a; f < b; f++) {
       const d = await p.evaluate(t => window.renderFrame(t), f / FPS);
       const buf = Buffer.from(d.split(',')[1], 'base64');
