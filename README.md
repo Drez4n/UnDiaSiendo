@@ -6,7 +6,7 @@ Cada vídeo se genera **íntegramente con código**: sin imágenes ni vídeo de 
 | Pieza | Cómo se hace |
 |---|---|
 | Imagen | Escenas ilustradas dibujadas con Canvas 2D (`escenas.js`), renderizadas fotograma a fotograma con Playwright/Chromium |
-| Voz en off | Piper (voz castellana `es_ES-davefx-medium`, modelos desde las releases de sherpa-onnx en GitHub) + procesado de estudio en `motor/voz.py`: tono más grave con WORLD, EQ, compresión y -16 LUFS |
+| Voz en off | ElevenLabs (voz «Brian», grave; clave guardada como secreto del entorno, nunca en el código) con subtítulos sincronizados por letra. Alternativa local sin clave: Piper `es_ES-davefx-medium` + procesado de estudio (`motor/voz.py`) |
 | Música | Composición original sintetizada con numpy (lira tipo Karplus-Strong, tambor de marco, bordón) |
 | Efectos | Sintetizados (fuego, grillos, molino, cascos, gente, monedas, temblor…) |
 | Subtítulos | Palabra a palabra, estilo shorts, sincronizados con la voz |

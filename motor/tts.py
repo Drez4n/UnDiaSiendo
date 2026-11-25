@@ -26,23 +26,37 @@ def main(ep):
             lineas.append({**ln, "ini": t, "fin": t + COLA_FINAL, "palabras": []})
             t += COLA_FINAL
             continue
-        s, sr = V.sintetizar(ln["texto"], motor, g.get("velocidad", 1.0))
-        s, sr = V.procesar(s, sr, g.get("grave", 0.76), g.get("formantes", 0.95))
+        sub = ln.get("sub", ln["texto"]).replace("...", "…").replace("d. C.", "d.\u00a0C.")
+        pal = sub.split(" ")
+        if motor.startswith("elevenlabs:"):
+            habladas = [l["texto"] for l in g["lineas"] if l["texto"]]
+            i = habladas.index(ln["texto"])
+            s, sr, al = V.elevenlabs(ln["texto"], motor.split(":", 1)[1],
+                                     " ".join(habladas[max(0, i - 2):i]), " ".join(habladas[i + 1:i + 2]),
+                                     g.get("modelo", "eleven_multilingual_v2"), g.get("ajustes"))
+            a0, a1 = max(0.0, al[0][1] - 0.04), al[-1][2] + 0.18
+            s = s[int(a0 * sr): int(a1 * sr)]
+            s, sr = V.procesar(s, sr, g.get("grave", 1.0), g.get("formantes", 1.0), g.get("eq", "suave"))
+            al = [(w, i0 - a0, i1 - a0) for w, i0, i1 in al]
+        else:
+            s, sr = V.sintetizar(ln["texto"], motor, g.get("velocidad", 1.0))
+            s, sr = V.procesar(s, sr, g.get("grave", 0.76), g.get("formantes", 0.95), g.get("eq", "fuerte"))
+            idx = np.where(np.abs(s) > 0.02)[0]
+            s = s[max(idx[0] - int(0.01 * sr), 0): idx[-1] + int(0.03 * sr)]
+            al = None
         SR = sr
-        # recorta silencios de los extremos
-        idx = np.where(np.abs(s) > 0.02)[0]
-        s = s[max(idx[0] - int(0.01 * sr), 0): idx[-1] + int(0.03 * sr)]
         dur = len(s) / sr
         pistas.append((t, s))
-        sub = ln.get("sub", ln["texto"]).replace("...", "…")
-        sub = sub.replace("d. C.", "d.\u00a0C.")
-        pal = sub.split(" ")
-        pesos = [len(re.sub(r"\W", "", p)) + 2 for p in pal]
-        tot, acc, palabras = sum(pesos), 0, []
-        for p, w in zip(pal, pesos):
-            palabras.append({"p": p, "ini": round(t + dur * acc / tot, 3),
-                             "fin": round(t + dur * (acc + w) / tot, 3)})
-            acc += w
+        if al and len(al) == len(pal):  # tiempos reales de cada palabra
+            palabras = [{"p": p, "ini": round(t + a, 3), "fin": round(t + b, 3)} for p, (_, a, b) in zip(pal, al)]
+        else:  # subtítulo distinto del texto hablado: reparto proporcional dentro del habla real
+            h0, h1 = (al[0][1], al[-1][2]) if al else (0, dur)
+            pesos = [len(re.sub(r"\W", "", p)) + 2 for p in pal]
+            tot, acc, palabras = sum(pesos), 0, []
+            for p, w in zip(pal, pesos):
+                palabras.append({"p": p, "ini": round(t + h0 + (h1 - h0) * acc / tot, 3),
+                                 "fin": round(t + h0 + (h1 - h0) * (acc + w) / tot, 3)})
+                acc += w
         lineas.append({**ln, "ini": round(t, 3), "fin": round(t + dur, 3), "palabras": palabras})
         t += dur + PAUSA
     total = t + 0.2

@@ -16,6 +16,34 @@ MODELOS = os.environ.get("MODELOS_DIR", "/home/user/models")
 SR_OUT = 44100
 _cache = {}
 
+def elevenlabs(texto, voz_id, anterior="", siguiente="", modelo="eleven_multilingual_v2", ajustes=None):
+    """Devuelve (audio float32, sr, [(palabra, ini, fin)]) usando /with-timestamps.
+    La clave la inyecta el proxy del entorno (cabecera xi-api-key)."""
+    import json, base64, subprocess, io, urllib.request
+    import soundfile as sf
+    cuerpo = {"text": texto, "model_id": modelo, "language_code": "es",
+              "voice_settings": ajustes or {"stability": 0.5, "similarity_boost": 0.8, "style": 0.2, "use_speaker_boost": True}}
+    if anterior: cuerpo["previous_text"] = anterior
+    if siguiente: cuerpo["next_text"] = siguiente
+    req = urllib.request.Request(
+        f"https://api.elevenlabs.io/v1/text-to-speech/{voz_id}/with-timestamps?output_format=mp3_44100_128",
+        data=json.dumps(cuerpo).encode(), method="POST",
+        headers={"Content-Type": "application/json", "xi-api-key": os.environ.get("ELEVENLABS_API_KEY", "proxy-injected")})
+    d = json.load(urllib.request.urlopen(req, timeout=120))
+    mp3 = base64.b64decode(d["audio_base64"])
+    wav = subprocess.run(["ffmpeg", "-v", "error", "-i", "-", "-f", "wav", "-ac", "1", "-"], input=mp3, capture_output=True).stdout
+    a, sr = sf.read(io.BytesIO(wav))
+    al = d.get("alignment") or d.get("normalized_alignment")
+    palabras, cur, ini = [], "", None
+    for ch, t0, t1 in zip(al["characters"], al["character_start_times_seconds"], al["character_end_times_seconds"]):
+        if ch.isspace():
+            if cur: palabras.append((cur, ini, fin)); cur = ""
+            continue
+        if not cur: ini = t0
+        cur += ch; fin = t1
+    if cur: palabras.append((cur, ini, fin))
+    return a.astype(np.float32), sr, palabras
+
 def sintetizar(texto, motor, velocidad=1.0):
     tipo, nombre = motor.split(":", 1)
     if tipo == "kokoro":
@@ -67,7 +95,7 @@ def _limitador(x, techo=0.95):
     y[m] = np.sign(x[m]) * (k + (techo - k) * np.tanh((np.abs(x[m]) - k) / (techo - k)))
     return y
 
-def procesar(audio, sr, grave=0.76, formantes=0.95):
+def procesar(audio, sr, grave=0.76, formantes=0.95, eq="fuerte"):
     x = audio.astype(np.float64)
     if grave != 1.0 or formantes != 1.0:
         import pyworld as pw
@@ -83,17 +111,22 @@ def procesar(audio, sr, grave=0.76, formantes=0.95):
         x = pw.synthesize(f0 * grave, sp2, ap2, sr, frame_period=5.0)
     x = resample_poly(x, SR_OUT, sr)
     sr = SR_OUT
-    x = sosfilt(butter(2, 70, "highpass", fs=sr, output="sos"), x)
-    x = _biquad(x, sr, "lowshelf", 110, +4.0, 0.8)
-    x = _biquad(x, sr, "peak", 320, -3.0, 1.0)
-    x = _biquad(x, sr, "peak", 3200, +2.5, 0.9)
-    x = _biquad(x, sr, "peak", 7000, -2.0, 2.0)
-    # brillo: armónicos suaves por encima de 5 kHz (la voz sintética de 22 kHz no tiene «aire»)
-    alto = sosfilt(butter(2, 3500, "highpass", fs=sr, output="sos"), x)
-    aire = sosfilt(butter(2, 9000, "highpass", fs=sr, output="sos"), np.tanh(alto * 4) / 4)
-    x = x + aire * 0.35
+    x = sosfilt(butter(2, 60, "highpass", fs=sr, output="sos"), x)
+    if eq == "fuerte":
+        x = _biquad(x, sr, "lowshelf", 110, +4.0, 0.8)
+        x = _biquad(x, sr, "peak", 320, -3.0, 1.0)
+        x = _biquad(x, sr, "peak", 3200, +2.5, 0.9)
+        x = _biquad(x, sr, "peak", 7000, -2.0, 2.0)
+        # brillo: armónicos suaves por encima de 5 kHz (la voz sintética de 22 kHz no tiene «aire»)
+        alto = sosfilt(butter(2, 3500, "highpass", fs=sr, output="sos"), x)
+        aire = sosfilt(butter(2, 9000, "highpass", fs=sr, output="sos"), np.tanh(alto * 4) / 4)
+        x = x + aire * 0.35
+    elif eq == "suave":  # voz ya de estudio: sólo un toque de cuerpo y presencia
+        x = _biquad(x, sr, "lowshelf", 100, +1.5, 0.8)
+        x = _biquad(x, sr, "peak", 300, -1.5, 1.0)
+        x = _biquad(x, sr, "peak", 3500, +1.0, 0.9)
     x = x / (np.abs(x).max() + 1e-9) * 0.5
-    x = _compresor(x, sr)
+    x = _compresor(x, sr, ratio=3.0 if eq == 'fuerte' else 2.0)
     try:
         import pyloudnorm as pyln
         loud = pyln.Meter(sr).integrated_loudness(x)
