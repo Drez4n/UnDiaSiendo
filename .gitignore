@@ -1,0 +1,7 @@
+.tmp/
+capturas/
+voz.wav
+mezcla.wav
+vista_previa.mp4
+node_modules/
+__pycache__/

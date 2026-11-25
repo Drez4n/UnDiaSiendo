@@ -1,0 +1,154 @@
+{
+ "titulo": "Un día siendo panadero en Pompeya",
+ "subtitulo": "Año 79 d. C.",
+ "voz": "em_alex",
+ "velocidad": 1.0,
+ "lineas": [
+  {
+   "escena": "titulo",
+   "texto": "Imagina que es el año setenta y nueve después de Cristo.",
+   "sub": "Imagina que es el año 79 d. C."
+  },
+  {
+   "escena": "titulo",
+   "texto": "Vives en Pompeya... y eres panadero."
+  },
+  {
+   "escena": "noche",
+   "texto": "Tu jornada empieza de noche, a la luz de una lucerna de aceite."
+  },
+  {
+   "escena": "noche",
+   "texto": "Mientras la ciudad duerme, tú ya estás trabajando."
+  },
+  {
+   "escena": "molino",
+   "texto": "Primero, el grano. En el patio giran los molinos de piedra volcánica."
+  },
+  {
+   "escena": "molino",
+   "texto": "Los mueve un burro con los ojos vendados, vuelta tras vuelta, toda la noche."
+  },
+  {
+   "escena": "masa",
+   "texto": "Con la harina amasas el pan: agua, sal y masa madre."
+  },
+  {
+   "escena": "masa",
+   "texto": "Le das forma redonda, lo cortas en ocho porciones..."
+  },
+  {
+   "escena": "masa",
+   "texto": "y lo marcas con tu sello, para que todos sepan que es tuyo."
+  },
+  {
+   "escena": "horno",
+   "texto": "Después, al horno de leña. La pala entra y sale sin parar."
+  },
+  {
+   "escena": "horno",
+   "texto": "Y el olor a pan caliente empieza a llenar la calle."
+  },
+  {
+   "escena": "venta",
+   "texto": "Al amanecer abres el mostrador. Vecinos, esclavos y comerciantes vienen a por su pan."
+  },
+  {
+   "escena": "venta",
+   "texto": "En Pompeya hay más de treinta panaderías. La competencia es dura.",
+   "sub": "En Pompeya hay más de 30 panaderías. La competencia es dura."
+  },
+  {
+   "escena": "tarde",
+   "texto": "Por la tarde, cubierto de harina, cuentas las monedas del día."
+  },
+  {
+   "escena": "tarde",
+   "texto": "Mañana, todo volverá a empezar."
+  },
+  {
+   "escena": "vesubio",
+   "texto": "Pero no sabes que, sobre tu ciudad, el Vesubio está a punto de despertar."
+  },
+  {
+   "escena": "hallazgo",
+   "texto": "Casi dos mil años después, los arqueólogos encontrarán tus panes..."
+  },
+  {
+   "escena": "hallazgo",
+   "texto": "todavía dentro del horno."
+  },
+  {
+   "escena": "final",
+   "texto": ""
+  }
+ ],
+ "tono": "D",
+ "sonido": {
+  "titulo": {
+   "musica": "intro",
+   "ambiente": [
+    "viento"
+   ]
+  },
+  "noche": {
+   "musica": "calma",
+   "ambiente": [
+    "grillos",
+    "lampara"
+   ]
+  },
+  "molino": {
+   "musica": "pulso",
+   "ambiente": [
+    "grillos",
+    "molino",
+    "cascos"
+   ]
+  },
+  "masa": {
+   "musica": "pulso",
+   "ambiente": [
+    "amasar",
+    "lampara"
+   ]
+  },
+  "horno": {
+   "musica": "pulso",
+   "ambiente": [
+    "fuego"
+   ]
+  },
+  "venta": {
+   "musica": "alegre",
+   "ambiente": [
+    "gente",
+    "pajaros"
+   ]
+  },
+  "tarde": {
+   "musica": "calma",
+   "ambiente": [
+    "monedas",
+    "gente_lejos"
+   ]
+  },
+  "vesubio": {
+   "musica": "tension",
+   "ambiente": [
+    "temblor",
+    "viento"
+   ]
+  },
+  "hallazgo": {
+   "musica": "misterio",
+   "ambiente": [
+    "viento"
+   ]
+  },
+  "final": {
+   "musica": "cierre",
+   "ambiente": []
+  }
+ }
+}

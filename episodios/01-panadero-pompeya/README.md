@@ -1,6 +1,8 @@
 # Ep. 01 — Un día siendo panadero en Pompeya (79 d. C.)
 
-**Formato:** vertical 9:16 · 15 s · voz en off en castellano (1.ª persona) · Canva `create-video`, guía `generic`, motor H3 Max (768p)
+**Formato:** vertical 9:16 (1080×1920, 30 fps) · ~78 s · voz en off en castellano (2.ª persona, «Imagina que…») · **100 % generado con código** (ver `../../README.md`)
+
+> El guion definitivo está en `guion.json` y las escenas en `escenas.js`. La tabla de abajo era el primer borrador de 15 s.
 
 ## Investigación (datos usados en el guion)
 - Pompeya tenía más de 30 panaderías (*pistrina*); se han excavado entre 33 y 35.

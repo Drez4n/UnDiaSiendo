@@ -1,0 +1,1137 @@
+{
+ "duracion": 77.687,
+ "titulo": "Un día siendo panadero en Pompeya",
+ "subtitulo": "Año 79 d. C.",
+ "escenas": [
+  {
+   "id": "titulo",
+   "ini": 0,
+   "fin": 6.997
+  },
+  {
+   "id": "noche",
+   "ini": 6.997,
+   "fin": 14.736
+  },
+  {
+   "id": "molino",
+   "ini": 14.736,
+   "fin": 24.257
+  },
+  {
+   "id": "masa",
+   "ini": 24.257,
+   "fin": 35.565
+  },
+  {
+   "id": "horno",
+   "ini": 35.565,
+   "fin": 43.307
+  },
+  {
+   "id": "venta",
+   "ini": 43.307,
+   "fin": 53.875
+  },
+  {
+   "id": "tarde",
+   "ini": 53.875,
+   "fin": 60.646
+  },
+  {
+   "id": "vesubio",
+   "ini": 60.646,
+   "fin": 65.897
+  },
+  {
+   "id": "hallazgo",
+   "ini": 65.897,
+   "fin": 72.937
+  },
+  {
+   "id": "final",
+   "ini": 72.937,
+   "fin": 77.687
+  }
+ ],
+ "lineas": [
+  {
+   "escena": "titulo",
+   "texto": "Imagina que es el año setenta y nueve después de Cristo.",
+   "sub": "Imagina que es el año 79 d. C.",
+   "ini": 0.6,
+   "fin": 3.939,
+   "palabras": [
+    {
+     "p": "Imagina",
+     "ini": 0.6,
+     "fin": 1.459
+    },
+    {
+     "p": "que",
+     "ini": 1.459,
+     "fin": 1.936
+    },
+    {
+     "p": "es",
+     "ini": 1.936,
+     "fin": 2.317
+    },
+    {
+     "p": "el",
+     "ini": 2.317,
+     "fin": 2.699
+    },
+    {
+     "p": "año",
+     "ini": 2.699,
+     "fin": 3.176
+    },
+    {
+     "p": "79",
+     "ini": 3.176,
+     "fin": 3.557
+    },
+    {
+     "p": "d. C.",
+     "ini": 3.557,
+     "fin": 3.939
+    }
+   ]
+  },
+  {
+   "escena": "titulo",
+   "texto": "Vives en Pompeya... y eres panadero.",
+   "ini": 4.289,
+   "fin": 6.447,
+   "palabras": [
+    {
+     "p": "Vives",
+     "ini": 4.289,
+     "fin": 4.676
+    },
+    {
+     "p": "en",
+     "ini": 4.676,
+     "fin": 4.898
+    },
+    {
+     "p": "Pompeya…",
+     "ini": 4.898,
+     "fin": 5.396
+    },
+    {
+     "p": "y",
+     "ini": 5.396,
+     "fin": 5.562
+    },
+    {
+     "p": "eres",
+     "ini": 5.562,
+     "fin": 5.894
+    },
+    {
+     "p": "panadero.",
+     "ini": 5.894,
+     "fin": 6.447
+    }
+   ]
+  },
+  {
+   "escena": "noche",
+   "texto": "Tu jornada empieza de noche, a la luz de una lucerna de aceite.",
+   "ini": 7.547,
+   "fin": 11.048,
+   "palabras": [
+    {
+     "p": "Tu",
+     "ini": 7.547,
+     "fin": 7.734
+    },
+    {
+     "p": "jornada",
+     "ini": 7.734,
+     "fin": 8.154
+    },
+    {
+     "p": "empieza",
+     "ini": 8.154,
+     "fin": 8.574
+    },
+    {
+     "p": "de",
+     "ini": 8.574,
+     "fin": 8.761
+    },
+    {
+     "p": "noche,",
+     "ini": 8.761,
+     "fin": 9.087
+    },
+    {
+     "p": "a",
+     "ini": 9.087,
+     "fin": 9.227
+    },
+    {
+     "p": "la",
+     "ini": 9.227,
+     "fin": 9.414
+    },
+    {
+     "p": "luz",
+     "ini": 9.414,
+     "fin": 9.648
+    },
+    {
+     "p": "de",
+     "ini": 9.648,
+     "fin": 9.834
+    },
+    {
+     "p": "una",
+     "ini": 9.834,
+     "fin": 10.068
+    },
+    {
+     "p": "lucerna",
+     "ini": 10.068,
+     "fin": 10.488
+    },
+    {
+     "p": "de",
+     "ini": 10.488,
+     "fin": 10.674
+    },
+    {
+     "p": "aceite.",
+     "ini": 10.674,
+     "fin": 11.048
+    }
+   ]
+  },
+  {
+   "escena": "noche",
+   "texto": "Mientras la ciudad duerme, tú ya estás trabajando.",
+   "ini": 11.398,
+   "fin": 14.186,
+   "palabras": [
+    {
+     "p": "Mientras",
+     "ini": 11.398,
+     "fin": 11.887
+    },
+    {
+     "p": "la",
+     "ini": 11.887,
+     "fin": 12.083
+    },
+    {
+     "p": "ciudad",
+     "ini": 12.083,
+     "fin": 12.474
+    },
+    {
+     "p": "duerme,",
+     "ini": 12.474,
+     "fin": 12.865
+    },
+    {
+     "p": "tú",
+     "ini": 12.865,
+     "fin": 13.061
+    },
+    {
+     "p": "ya",
+     "ini": 13.061,
+     "fin": 13.257
+    },
+    {
+     "p": "estás",
+     "ini": 13.257,
+     "fin": 13.599
+    },
+    {
+     "p": "trabajando.",
+     "ini": 13.599,
+     "fin": 14.186
+    }
+   ]
+  },
+  {
+   "escena": "molino",
+   "texto": "Primero, el grano. En el patio giran los molinos de piedra volcánica.",
+   "ini": 15.286,
+   "fin": 19.218,
+   "palabras": [
+    {
+     "p": "Primero,",
+     "ini": 15.286,
+     "fin": 15.734
+    },
+    {
+     "p": "el",
+     "ini": 15.734,
+     "fin": 15.933
+    },
+    {
+     "p": "grano.",
+     "ini": 15.933,
+     "fin": 16.282
+    },
+    {
+     "p": "En",
+     "ini": 16.282,
+     "fin": 16.481
+    },
+    {
+     "p": "el",
+     "ini": 16.481,
+     "fin": 16.68
+    },
+    {
+     "p": "patio",
+     "ini": 16.68,
+     "fin": 17.028
+    },
+    {
+     "p": "giran",
+     "ini": 17.028,
+     "fin": 17.377
+    },
+    {
+     "p": "los",
+     "ini": 17.377,
+     "fin": 17.626
+    },
+    {
+     "p": "molinos",
+     "ini": 17.626,
+     "fin": 18.073
+    },
+    {
+     "p": "de",
+     "ini": 18.073,
+     "fin": 18.273
+    },
+    {
+     "p": "piedra",
+     "ini": 18.273,
+     "fin": 18.671
+    },
+    {
+     "p": "volcánica.",
+     "ini": 18.671,
+     "fin": 19.218
+    }
+   ]
+  },
+  {
+   "escena": "molino",
+   "texto": "Los mueve un burro con los ojos vendados, vuelta tras vuelta, toda la noche.",
+   "ini": 19.568,
+   "fin": 23.707,
+   "palabras": [
+    {
+     "p": "Los",
+     "ini": 19.568,
+     "fin": 19.803
+    },
+    {
+     "p": "mueve",
+     "ini": 19.803,
+     "fin": 20.133
+    },
+    {
+     "p": "un",
+     "ini": 20.133,
+     "fin": 20.321
+    },
+    {
+     "p": "burro",
+     "ini": 20.321,
+     "fin": 20.65
+    },
+    {
+     "p": "con",
+     "ini": 20.65,
+     "fin": 20.885
+    },
+    {
+     "p": "los",
+     "ini": 20.885,
+     "fin": 21.12
+    },
+    {
+     "p": "ojos",
+     "ini": 21.12,
+     "fin": 21.402
+    },
+    {
+     "p": "vendados,",
+     "ini": 21.402,
+     "fin": 21.873
+    },
+    {
+     "p": "vuelta",
+     "ini": 21.873,
+     "fin": 22.249
+    },
+    {
+     "p": "tras",
+     "ini": 22.249,
+     "fin": 22.531
+    },
+    {
+     "p": "vuelta,",
+     "ini": 22.531,
+     "fin": 22.907
+    },
+    {
+     "p": "toda",
+     "ini": 22.907,
+     "fin": 23.189
+    },
+    {
+     "p": "la",
+     "ini": 23.189,
+     "fin": 23.378
+    },
+    {
+     "p": "noche.",
+     "ini": 23.378,
+     "fin": 23.707
+    }
+   ]
+  },
+  {
+   "escena": "masa",
+   "texto": "Con la harina amasas el pan: agua, sal y masa madre.",
+   "ini": 24.807,
+   "fin": 27.984,
+   "palabras": [
+    {
+     "p": "Con",
+     "ini": 24.807,
+     "fin": 25.067
+    },
+    {
+     "p": "la",
+     "ini": 25.067,
+     "fin": 25.275
+    },
+    {
+     "p": "harina",
+     "ini": 25.275,
+     "fin": 25.692
+    },
+    {
+     "p": "amasas",
+     "ini": 25.692,
+     "fin": 26.109
+    },
+    {
+     "p": "el",
+     "ini": 26.109,
+     "fin": 26.317
+    },
+    {
+     "p": "pan:",
+     "ini": 26.317,
+     "fin": 26.578
+    },
+    {
+     "p": "agua,",
+     "ini": 26.578,
+     "fin": 26.89
+    },
+    {
+     "p": "sal",
+     "ini": 26.89,
+     "fin": 27.15
+    },
+    {
+     "p": "y",
+     "ini": 27.15,
+     "fin": 27.307
+    },
+    {
+     "p": "masa",
+     "ini": 27.307,
+     "fin": 27.619
+    },
+    {
+     "p": "madre.",
+     "ini": 27.619,
+     "fin": 27.984
+    }
+   ]
+  },
+  {
+   "escena": "masa",
+   "texto": "Le das forma redonda, lo cortas en ocho porciones...",
+   "ini": 28.334,
+   "fin": 31.439,
+   "palabras": [
+    {
+     "p": "Le",
+     "ini": 28.334,
+     "fin": 28.548
+    },
+    {
+     "p": "das",
+     "ini": 28.548,
+     "fin": 28.816
+    },
+    {
+     "p": "forma",
+     "ini": 28.816,
+     "fin": 29.19
+    },
+    {
+     "p": "redonda,",
+     "ini": 29.19,
+     "fin": 29.672
+    },
+    {
+     "p": "lo",
+     "ini": 29.672,
+     "fin": 29.886
+    },
+    {
+     "p": "cortas",
+     "ini": 29.886,
+     "fin": 30.315
+    },
+    {
+     "p": "en",
+     "ini": 30.315,
+     "fin": 30.529
+    },
+    {
+     "p": "ocho",
+     "ini": 30.529,
+     "fin": 30.85
+    },
+    {
+     "p": "porciones…",
+     "ini": 30.85,
+     "fin": 31.439
+    }
+   ]
+  },
+  {
+   "escena": "masa",
+   "texto": "y lo marcas con tu sello, para que todos sepan que es tuyo.",
+   "ini": 31.789,
+   "fin": 35.015,
+   "palabras": [
+    {
+     "p": "y",
+     "ini": 31.789,
+     "fin": 31.925
+    },
+    {
+     "p": "lo",
+     "ini": 31.925,
+     "fin": 32.107
+    },
+    {
+     "p": "marcas",
+     "ini": 32.107,
+     "fin": 32.47
+    },
+    {
+     "p": "con",
+     "ini": 32.47,
+     "fin": 32.698
+    },
+    {
+     "p": "tu",
+     "ini": 32.698,
+     "fin": 32.879
+    },
+    {
+     "p": "sello,",
+     "ini": 32.879,
+     "fin": 33.197
+    },
+    {
+     "p": "para",
+     "ini": 33.197,
+     "fin": 33.47
+    },
+    {
+     "p": "que",
+     "ini": 33.47,
+     "fin": 33.697
+    },
+    {
+     "p": "todos",
+     "ini": 33.697,
+     "fin": 34.015
+    },
+    {
+     "p": "sepan",
+     "ini": 34.015,
+     "fin": 34.333
+    },
+    {
+     "p": "que",
+     "ini": 34.333,
+     "fin": 34.56
+    },
+    {
+     "p": "es",
+     "ini": 34.56,
+     "fin": 34.742
+    },
+    {
+     "p": "tuyo.",
+     "ini": 34.742,
+     "fin": 35.015
+    }
+   ]
+  },
+  {
+   "escena": "horno",
+   "texto": "Después, al horno de leña. La pala entra y sale sin parar.",
+   "ini": 36.115,
+   "fin": 39.474,
+   "palabras": [
+    {
+     "p": "Después,",
+     "ini": 36.115,
+     "fin": 36.559
+    },
+    {
+     "p": "al",
+     "ini": 36.559,
+     "fin": 36.757
+    },
+    {
+     "p": "horno",
+     "ini": 36.757,
+     "fin": 37.103
+    },
+    {
+     "p": "de",
+     "ini": 37.103,
+     "fin": 37.3
+    },
+    {
+     "p": "leña.",
+     "ini": 37.3,
+     "fin": 37.597
+    },
+    {
+     "p": "La",
+     "ini": 37.597,
+     "fin": 37.794
+    },
+    {
+     "p": "pala",
+     "ini": 37.794,
+     "fin": 38.091
+    },
+    {
+     "p": "entra",
+     "ini": 38.091,
+     "fin": 38.436
+    },
+    {
+     "p": "y",
+     "ini": 38.436,
+     "fin": 38.585
+    },
+    {
+     "p": "sale",
+     "ini": 38.585,
+     "fin": 38.881
+    },
+    {
+     "p": "sin",
+     "ini": 38.881,
+     "fin": 39.128
+    },
+    {
+     "p": "parar.",
+     "ini": 39.128,
+     "fin": 39.474
+    }
+   ]
+  },
+  {
+   "escena": "horno",
+   "texto": "Y el olor a pan caliente empieza a llenar la calle.",
+   "ini": 39.824,
+   "fin": 42.757,
+   "palabras": [
+    {
+     "p": "Y",
+     "ini": 39.824,
+     "fin": 39.966
+    },
+    {
+     "p": "el",
+     "ini": 39.966,
+     "fin": 40.155
+    },
+    {
+     "p": "olor",
+     "ini": 40.155,
+     "fin": 40.439
+    },
+    {
+     "p": "a",
+     "ini": 40.439,
+     "fin": 40.581
+    },
+    {
+     "p": "pan",
+     "ini": 40.581,
+     "fin": 40.817
+    },
+    {
+     "p": "caliente",
+     "ini": 40.817,
+     "fin": 41.29
+    },
+    {
+     "p": "empieza",
+     "ini": 41.29,
+     "fin": 41.716
+    },
+    {
+     "p": "a",
+     "ini": 41.716,
+     "fin": 41.858
+    },
+    {
+     "p": "llenar",
+     "ini": 41.858,
+     "fin": 42.237
+    },
+    {
+     "p": "la",
+     "ini": 42.237,
+     "fin": 42.426
+    },
+    {
+     "p": "calle.",
+     "ini": 42.426,
+     "fin": 42.757
+    }
+   ]
+  },
+  {
+   "escena": "venta",
+   "texto": "Al amanecer abres el mostrador. Vecinos, esclavos y comerciantes vienen a por su pan.",
+   "ini": 43.857,
+   "fin": 48.998,
+   "palabras": [
+    {
+     "p": "Al",
+     "ini": 43.857,
+     "fin": 44.069
+    },
+    {
+     "p": "amanecer",
+     "ini": 44.069,
+     "fin": 44.599
+    },
+    {
+     "p": "abres",
+     "ini": 44.599,
+     "fin": 44.97
+    },
+    {
+     "p": "el",
+     "ini": 44.97,
+     "fin": 45.182
+    },
+    {
+     "p": "mostrador.",
+     "ini": 45.182,
+     "fin": 45.765
+    },
+    {
+     "p": "Vecinos,",
+     "ini": 45.765,
+     "fin": 46.242
+    },
+    {
+     "p": "esclavos",
+     "ini": 46.242,
+     "fin": 46.772
+    },
+    {
+     "p": "y",
+     "ini": 46.772,
+     "fin": 46.931
+    },
+    {
+     "p": "comerciantes",
+     "ini": 46.931,
+     "fin": 47.673
+    },
+    {
+     "p": "vienen",
+     "ini": 47.673,
+     "fin": 48.097
+    },
+    {
+     "p": "a",
+     "ini": 48.097,
+     "fin": 48.256
+    },
+    {
+     "p": "por",
+     "ini": 48.256,
+     "fin": 48.521
+    },
+    {
+     "p": "su",
+     "ini": 48.521,
+     "fin": 48.733
+    },
+    {
+     "p": "pan.",
+     "ini": 48.733,
+     "fin": 48.998
+    }
+   ]
+  },
+  {
+   "escena": "venta",
+   "texto": "En Pompeya hay más de treinta panaderías. La competencia es dura.",
+   "sub": "En Pompeya hay más de 30 panaderías. La competencia es dura.",
+   "ini": 49.348,
+   "fin": 53.325,
+   "palabras": [
+    {
+     "p": "En",
+     "ini": 49.348,
+     "fin": 49.575
+    },
+    {
+     "p": "Pompeya",
+     "ini": 49.575,
+     "fin": 50.087
+    },
+    {
+     "p": "hay",
+     "ini": 50.087,
+     "fin": 50.371
+    },
+    {
+     "p": "más",
+     "ini": 50.371,
+     "fin": 50.655
+    },
+    {
+     "p": "de",
+     "ini": 50.655,
+     "fin": 50.882
+    },
+    {
+     "p": "30",
+     "ini": 50.882,
+     "fin": 51.109
+    },
+    {
+     "p": "panaderías.",
+     "ini": 51.109,
+     "fin": 51.791
+    },
+    {
+     "p": "La",
+     "ini": 51.791,
+     "fin": 52.018
+    },
+    {
+     "p": "competencia",
+     "ini": 52.018,
+     "fin": 52.757
+    },
+    {
+     "p": "es",
+     "ini": 52.757,
+     "fin": 52.984
+    },
+    {
+     "p": "dura.",
+     "ini": 52.984,
+     "fin": 53.325
+    }
+   ]
+  },
+  {
+   "escena": "tarde",
+   "texto": "Por la tarde, cubierto de harina, cuentas las monedas del día.",
+   "ini": 54.425,
+   "fin": 57.857,
+   "palabras": [
+    {
+     "p": "Por",
+     "ini": 54.425,
+     "fin": 54.667
+    },
+    {
+     "p": "la",
+     "ini": 54.667,
+     "fin": 54.86
+    },
+    {
+     "p": "tarde,",
+     "ini": 54.86,
+     "fin": 55.198
+    },
+    {
+     "p": "cubierto",
+     "ini": 55.198,
+     "fin": 55.682
+    },
+    {
+     "p": "de",
+     "ini": 55.682,
+     "fin": 55.875
+    },
+    {
+     "p": "harina,",
+     "ini": 55.875,
+     "fin": 56.262
+    },
+    {
+     "p": "cuentas",
+     "ini": 56.262,
+     "fin": 56.697
+    },
+    {
+     "p": "las",
+     "ini": 56.697,
+     "fin": 56.938
+    },
+    {
+     "p": "monedas",
+     "ini": 56.938,
+     "fin": 57.374
+    },
+    {
+     "p": "del",
+     "ini": 57.374,
+     "fin": 57.615
+    },
+    {
+     "p": "día.",
+     "ini": 57.615,
+     "fin": 57.857
+    }
+   ]
+  },
+  {
+   "escena": "tarde",
+   "texto": "Mañana, todo volverá a empezar.",
+   "ini": 58.207,
+   "fin": 60.096,
+   "palabras": [
+    {
+     "p": "Mañana,",
+     "ini": 58.207,
+     "fin": 58.639
+    },
+    {
+     "p": "todo",
+     "ini": 58.639,
+     "fin": 58.963
+    },
+    {
+     "p": "volverá",
+     "ini": 58.963,
+     "fin": 59.448
+    },
+    {
+     "p": "a",
+     "ini": 59.448,
+     "fin": 59.61
+    },
+    {
+     "p": "empezar.",
+     "ini": 59.61,
+     "fin": 60.096
+    }
+   ]
+  },
+  {
+   "escena": "vesubio",
+   "texto": "Pero no sabes que, sobre tu ciudad, el Vesubio está a punto de despertar.",
+   "ini": 61.196,
+   "fin": 65.347,
+   "palabras": [
+    {
+     "p": "Pero",
+     "ini": 61.196,
+     "fin": 61.489
+    },
+    {
+     "p": "no",
+     "ini": 61.489,
+     "fin": 61.684
+    },
+    {
+     "p": "sabes",
+     "ini": 61.684,
+     "fin": 62.026
+    },
+    {
+     "p": "que,",
+     "ini": 62.026,
+     "fin": 62.27
+    },
+    {
+     "p": "sobre",
+     "ini": 62.27,
+     "fin": 62.612
+    },
+    {
+     "p": "tu",
+     "ini": 62.612,
+     "fin": 62.807
+    },
+    {
+     "p": "ciudad,",
+     "ini": 62.807,
+     "fin": 63.198
+    },
+    {
+     "p": "el",
+     "ini": 63.198,
+     "fin": 63.393
+    },
+    {
+     "p": "Vesubio",
+     "ini": 63.393,
+     "fin": 63.833
+    },
+    {
+     "p": "está",
+     "ini": 63.833,
+     "fin": 64.126
+    },
+    {
+     "p": "a",
+     "ini": 64.126,
+     "fin": 64.272
+    },
+    {
+     "p": "punto",
+     "ini": 64.272,
+     "fin": 64.614
+    },
+    {
+     "p": "de",
+     "ini": 64.614,
+     "fin": 64.81
+    },
+    {
+     "p": "despertar.",
+     "ini": 64.81,
+     "fin": 65.347
+    }
+   ]
+  },
+  {
+   "escena": "hallazgo",
+   "texto": "Casi dos mil años después, los arqueólogos encontrarán tus panes...",
+   "ini": 66.447,
+   "fin": 70.498,
+   "palabras": [
+    {
+     "p": "Casi",
+     "ini": 66.447,
+     "fin": 66.775
+    },
+    {
+     "p": "dos",
+     "ini": 66.775,
+     "fin": 67.049
+    },
+    {
+     "p": "mil",
+     "ini": 67.049,
+     "fin": 67.323
+    },
+    {
+     "p": "años",
+     "ini": 67.323,
+     "fin": 67.651
+    },
+    {
+     "p": "después,",
+     "ini": 67.651,
+     "fin": 68.144
+    },
+    {
+     "p": "los",
+     "ini": 68.144,
+     "fin": 68.418
+    },
+    {
+     "p": "arqueólogos",
+     "ini": 68.418,
+     "fin": 69.129
+    },
+    {
+     "p": "encontrarán",
+     "ini": 69.129,
+     "fin": 69.841
+    },
+    {
+     "p": "tus",
+     "ini": 69.841,
+     "fin": 70.115
+    },
+    {
+     "p": "panes…",
+     "ini": 70.115,
+     "fin": 70.498
+    }
+   ]
+  },
+  {
+   "escena": "hallazgo",
+   "texto": "todavía dentro del horno.",
+   "ini": 70.848,
+   "fin": 72.387,
+   "palabras": [
+    {
+     "p": "todavía",
+     "ini": 70.848,
+     "fin": 71.326
+    },
+    {
+     "p": "dentro",
+     "ini": 71.326,
+     "fin": 71.75
+    },
+    {
+     "p": "del",
+     "ini": 71.75,
+     "fin": 72.015
+    },
+    {
+     "p": "horno.",
+     "ini": 72.015,
+     "fin": 72.387
+    }
+   ]
+  },
+  {
+   "escena": "final",
+   "texto": "",
+   "ini": 73.48670833333333,
+   "fin": 77.48670833333333,
+   "palabras": []
+  }
+ ]
+}
