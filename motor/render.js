@@ -6,7 +6,7 @@ const fs = require('fs'), path = require('path'), { spawn, execFileSync } = requ
 const args = process.argv.slice(2);
 const ep = path.resolve(args[0]);
 const opt = k => { const i = args.indexOf('--' + k); return i >= 0 ? args[i + 1] : null; };
-const FPS = +(opt('fps') || 30), HILOS = +(opt('hilos') || 3);
+const FPS = +(opt('fps') || 30), HILOS = +(opt('hilos') || 3), CRF = opt('crf') || '20';
 const motor = __dirname;
 const tl = JSON.parse(fs.readFileSync(path.join(ep, 'timeline.json'), 'utf8'));
 
@@ -41,7 +41,7 @@ async function pagina(browser) {
     const a = f0 + h * tramo, b = Math.min(f1, a + tramo); if (a >= b) return;
     const p = await pagina(browser);
     const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-',
-      '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', path.join(tmp, `parte${h}.mp4`)]);
+      '-c:v', 'libx264', '-preset', 'medium', '-crf', CRF, '-pix_fmt', 'yuv420p', path.join(tmp, `parte${h}.mp4`)]);
     for (let f = a; f < b; f++) {
       const d = await p.evaluate(t => window.renderFrame(t), f / FPS);
       const buf = Buffer.from(d.split(',')[1], 'base64');
