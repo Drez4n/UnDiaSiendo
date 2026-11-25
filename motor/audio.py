@@ -202,8 +202,9 @@ def main(ep):
     amb = amb / (np.abs(amb).max() + 1e-9) * 0.35
     mix = voz * 1.0 + mus * duck + amb * (0.6 + 0.4 * duck)
     mix = mix[: int((total) * SR)] * fade(int(total * SR), 0.05, 1.2)
-    mix = np.tanh(mix * 1.1) / np.tanh(1.1)
-    mix = mix / np.abs(mix).max() * 0.94
+    mix = mix / (np.abs(mix).max() + 1e-9) * 1.05
+    k = 0.8; m = np.abs(mix) > k  # limitador suave sólo en los picos
+    mix[m] = np.sign(mix[m]) * (k + 0.15 * np.tanh((np.abs(mix[m]) - k) / 0.15))
     sf.write(os.path.join(ep, "mezcla.wav"), mix.astype(np.float32), SR)
     print("mezcla.wav", round(len(mix) / SR, 2), "s")
 

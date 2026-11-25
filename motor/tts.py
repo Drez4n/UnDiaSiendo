@@ -5,18 +5,17 @@ Cada línea del guion se sintetiza por separado con Kokoro; se calculan los
 tiempos de cada palabra (proporcionales a su longitud) para los subtítulos.
 """
 import json, sys, os, re
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, soundfile as sf
-from kokoro_onnx import Kokoro
+import voz as V
 
-MODELOS = os.environ.get("KOKORO_DIR", "/home/user/models")
-SR = 24000
 PAUSA = 0.35          # silencio entre frases de la misma escena
 PAUSA_ESCENA = 0.75   # silencio extra al cambiar de escena
 COLA_FINAL = 4.0      # segundos de la escena final (sin voz)
 
 def main(ep):
     g = json.load(open(os.path.join(ep, "guion.json"), encoding="utf-8"))
-    k = Kokoro(f"{MODELOS}/kokoro-v1.0.onnx", f"{MODELOS}/voices-v1.0.bin")
+    motor = g.get("voz", "piper:es_ES-davefx-medium")
     t, pistas, lineas = 0.6, [], []
     prev = None
     for ln in g["lineas"]:
@@ -27,11 +26,12 @@ def main(ep):
             lineas.append({**ln, "ini": t, "fin": t + COLA_FINAL, "palabras": []})
             t += COLA_FINAL
             continue
-        s, sr = k.create(ln["texto"], voice=g.get("voz", "em_alex"),
-                         speed=g.get("velocidad", 1.0), lang="es")
+        s, sr = V.sintetizar(ln["texto"], motor, g.get("velocidad", 1.0))
+        s, sr = V.procesar(s, sr, g.get("grave", 0.76), g.get("formantes", 0.95))
+        SR = sr
         # recorta silencios de los extremos
-        idx = np.where(np.abs(s) > 0.01)[0]
-        s = s[max(idx[0] - 240, 0): idx[-1] + 480]
+        idx = np.where(np.abs(s) > 0.02)[0]
+        s = s[max(idx[0] - int(0.01 * sr), 0): idx[-1] + int(0.03 * sr)]
         dur = len(s) / sr
         pistas.append((t, s))
         sub = ln.get("sub", ln["texto"]).replace("...", "…")
@@ -49,7 +49,6 @@ def main(ep):
     voz = np.zeros(int(total * SR) + SR, dtype=np.float32)
     for ini, s in pistas:
         a = int(ini * SR); voz[a:a + len(s)] += s
-    voz = voz / max(1e-6, np.abs(voz).max()) * 0.89
     sf.write(os.path.join(ep, "voz.wav"), voz, SR)
     # escenas: intervalo continuo de cada escena
     escenas = []

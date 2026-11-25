@@ -66,7 +66,7 @@ function postproceso(ctx, t) {
   ctx.fillStyle = radial(ctx, W / 2, H * 0.47, H * 0.28, H * 0.78, [[0, 'rgba(0,0,0,0)'], [1, 'rgba(0,0,0,0.62)']]);
   ctx.fillRect(0, 0, W, H);
   // grano de película
-  ctx.globalAlpha = 0.055; ctx.globalCompositeOperation = 'overlay';
+  ctx.globalAlpha = window.GRANO_ALPHA ?? 0.055; ctx.globalCompositeOperation = 'overlay';
   const f = Math.floor(t * 24), ox = (f * 197) % 512, oy = (f * 331) % 512;
   ctx.fillStyle = ctx.createPattern(GRANO, 'repeat');
   ctx.translate(-ox, -oy); ctx.fillRect(0, 0, W + 512, H + 512);

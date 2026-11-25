@@ -6,7 +6,7 @@ Cada vídeo se genera **íntegramente con código**: sin imágenes ni vídeo de 
 | Pieza | Cómo se hace |
 |---|---|
 | Imagen | Escenas ilustradas dibujadas con Canvas 2D (`escenas.js`), renderizadas fotograma a fotograma con Playwright/Chromium |
-| Voz en off | [Kokoro](https://github.com/thewh1teagle/kokoro-onnx) en local (voz `em_alex`, castellano) |
+| Voz en off | Piper (voz castellana `es_ES-davefx-medium`, modelos desde las releases de sherpa-onnx en GitHub) + procesado de estudio en `motor/voz.py`: tono más grave con WORLD, EQ, compresión y -16 LUFS |
 | Música | Composición original sintetizada con numpy (lira tipo Karplus-Strong, tambor de marco, bordón) |
 | Efectos | Sintetizados (fuego, grillos, molino, cascos, gente, monedas, temblor…) |
 | Subtítulos | Palabra a palabra, estilo shorts, sincronizados con la voz |
@@ -29,11 +29,12 @@ episodios/NN-nombre/
 
 ## Generar un episodio
 ```bash
-pip install kokoro-onnx soundfile scipy numpy
+pip install piper-tts pyworld pyloudnorm kokoro-onnx soundfile scipy numpy
 # modelos de voz (una vez):
 mkdir -p /home/user/models && cd /home/user/models
 curl -LO https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
 curl -LO https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+curl -L https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-es_ES-davefx-medium.tar.bz2 | tar xj
 cd -
 EP=episodios/01-panadero-pompeya
 python3 motor/tts.py   $EP        # voz + línea temporal
