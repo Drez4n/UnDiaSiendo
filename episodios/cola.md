@@ -6,7 +6,7 @@ lo produce y cambia su estado a `programado AAAA-MM-DD`. Cuando queden menos de 
 
 | Nº | Episodio | Carpeta | Estado |
 |---|---|---|---|
-| 1 | Panadero en Pompeya (79 d. C.) | 01-panadero-pompeya | programado 2026-11-28 |
+| 1 | Panadero en Pompeya (79 d. C.) | 01-panadero-pompeya | programado 2026-11-27 |
 | 2 | Gladiador en la antigua Roma — desde que te despiertas en el cuartel (ludus) hasta que entras en el Coliseo | 02-gladiador-roma | pendiente |
 | 3 | Vikingo en el año 900 — aldea nórdica, trabajo, navegar, vida de guerrero | 03-vikingo | pendiente |
 | 4 | Faraón en el antiguo Egipto — lujos, responsabilidades, ceremonias y decisiones | 04-faraon | pendiente |
