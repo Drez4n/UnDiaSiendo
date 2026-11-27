@@ -33,3 +33,7 @@ Hombre de unos 35 años, piel aceitunada, pelo rizado corto y oscuro, barba cort
 
 ## Restricciones
 Sin texto en pantalla, sin anacronismos (ni tomates ni ropa medieval), Vesubio sin humo, mismo personaje en todos los planos, burro sin maltrato.
+
+## Publicación
+- **Programado en Metricool:** sábado 28/11/2026 a las 10:00 (Europe/Madrid) — Instagram Reel, TikTok y YouTube Short, marcado como contenido con IA (voz de ElevenLabs).
+- Calendario de publicación del canal: **2 vídeos al día, a las 10:00 y a las 18:00** (mejores franjas según Metricool).
