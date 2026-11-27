@@ -1,7 +1,7 @@
 # Producción diaria automática — guía para la sesión de Claude
 
 Esta guía la sigue la **tarea programada diaria (~9:00, Europe/Madrid)**. Cada ejecución produce **un episodio** del canal
-«Un día siendo…» y lo deja **programado en Metricool para el día siguiente a las 10:00**. Empiezas sin contexto: todo lo
+«Un día siendo…» y lo deja **programado en Metricool a las 10:00 del siguiente día libre** (a partir de mañana). Empiezas sin contexto: todo lo
 necesario está aquí y en el episodio 1 (`episodios/01-panadero-pompeya/`), que es la **referencia de calidad y estilo**.
 
 ## 0. Preparación (cada ejecución)
@@ -11,8 +11,9 @@ necesario está aquí y en el episodio 1 (`episodios/01-panadero-pompeya/`), que
 2. Dependencias (si faltan): `pip install -q piper-tts pyworld pyloudnorm soundfile scipy numpy`. Chromium + Playwright y
    ffmpeg ya están instalados (`require('playwright')` funciona; no reinstales Playwright).
 3. **Limpieza:** `python3 motor/limpiar_videos.py` (borra del árbol los vídeos publicados hace ≥7 días).
-4. Comprueba en Metricool (`getScheduledPosts`, marca `8392255`, zona `Europe/Madrid`) que **mañana a las 10:00 no hay ya
-   un vídeo programado**. Si lo hay, no produzcas otro: termina avisando de que ya estaba cubierto.
+4. **Fecha objetivo:** con `getScheduledPosts` (marca `8392255`, zona `Europe/Madrid`, de mañana a +14 días) busca el
+   **primer día a partir de mañana sin publicación a las 10:00**. Esa es la fecha del episodio de hoy. Si ya hay 5 o más
+   días seguidos cubiertos, no produzcas nada y termina avisando (hay margen de sobra).
 
 ## 1. Elegir el episodio
 Primer episodio `pendiente` de `episodios/cola.md`. Si quedan menos de 3 pendientes, añade ideas nuevas al final de la cola.
@@ -73,7 +74,7 @@ escenas vacías o demasiado oscuras, solapes con subtítulos. Repite hasta que e
 1. Commit (guion, escenas, timeline, README, video.mp4, cola.md actualizada) y push a `claude/dazzling-cray-fh0gdy`.
 2. Comprueba que la URL pública responde 200 con el tamaño correcto:
    `https://raw.githubusercontent.com/Drez4n/UnDiaSiendo/claude/dazzling-cray-fh0gdy/episodios/NN-nombre/video.mp4`
-3. `createScheduledPost` en Metricool, marca **`8392255`**, fecha **mañana 10:00** (`publicationDate` con zona `Europe/Madrid`):
+3. `createScheduledPost` en Metricool, marca **`8392255`**, fecha **la fecha objetivo del paso 0.4 a las 10:00** (`publicationDate` con zona `Europe/Madrid`):
    - `providers`: instagram, tiktok, youtube. `autoPublish: true`, `draft: false`, `videoCoverMilliseconds: 2500`.
    - `instagramData`: `{"type":"REEL","showReelOnFeed":true,"isAiGenerated":true}`
    - `tiktokData`: `{"title":"<título>","privacyOption":"PUBLIC_TO_EVERYONE","isAigc":true, ...flags a false}` (el título es obligatorio)
