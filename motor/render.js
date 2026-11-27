@@ -16,6 +16,7 @@ async function pagina(browser) {
   p.on('pageerror', e => console.error('[página]', e.message));
   await p.goto('file://' + path.join(motor, 'plantilla.html'));
   await p.addScriptTag({ path: path.join(motor, 'base.js') });
+  await p.addScriptTag({ path: path.join(motor, 'dibujo.js') });
   await p.addScriptTag({ path: path.join(ep, 'escenas.js') });
   if (opt('grano') != null) await p.evaluate(g => { window.GRANO_ALPHA = g; }, +opt('grano'));
   await p.evaluate(t => window.preparar(t), tl);

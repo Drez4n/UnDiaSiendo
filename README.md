@@ -18,6 +18,8 @@ motor/            # común a todos los episodios
   tts.py          # guion.json -> voz.wav + timeline.json (tiempos de escenas y palabras)
   audio.py        # música + efectos + mezcla con la voz -> mezcla.wav
   base.js         # utilidades de dibujo, subtítulos, transiciones, grano, viñeta, chip de hora
+  dibujo.js       # piezas reutilizables: personajes (figura), siluetas iluminadas, cielo, estrellas, humo
+  voz.py, cuota.py, limpiar_videos.py
   render.js       # render en paralelo -> video.mp4  (o --fotos 1,5,9 para capturas de revisión)
   plantilla.html, fuentes/ (Cinzel, Montserrat)
 episodios/NN-nombre/
@@ -42,6 +44,11 @@ python3 motor/audio.py $EP        # música, efectos y mezcla
 node motor/render.js   $EP --fotos 5,20,40   # capturas para revisar
 node motor/render.js   $EP --hilos 4         # vídeo final
 ```
+
+## Automatización
+Una tarea programada diaria (~9:00, hora de Madrid) produce el siguiente episodio de `episodios/cola.md` y lo programa en Metricool
+para el día siguiente a las 10:00 (Instagram Reel, TikTok y YouTube Short). El proceso completo está en `docs/AUTOMATIZACION.md`.
+Los vídeos se borran de GitHub 7 días después de publicarse (`motor/limpiar_videos.py`).
 
 ## Episodios
 1. ✅ Panadero en Pompeya (79 d. C.)
