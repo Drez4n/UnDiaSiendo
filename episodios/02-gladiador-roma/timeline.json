@@ -1,0 +1,1084 @@
+{
+ "duracion": 91.15,
+ "titulo": "Un día siendo gladiador en Roma",
+ "subtitulo": "Año 90 d. C.",
+ "escenas": [
+  {
+   "id": "titulo",
+   "ini": 0,
+   "fin": 7.444
+  },
+  {
+   "id": "celda",
+   "ini": 7.444,
+   "fin": 15.417
+  },
+  {
+   "id": "entreno",
+   "ini": 15.417,
+   "fin": 25.505
+  },
+  {
+   "id": "comida",
+   "ini": 25.505,
+   "fin": 38.565
+  },
+  {
+   "id": "dato",
+   "ini": 38.565,
+   "fin": 50.325
+  },
+  {
+   "id": "cena",
+   "ini": 50.325,
+   "fin": 59.505
+  },
+  {
+   "id": "juegos",
+   "ini": 59.505,
+   "fin": 70.708
+  },
+  {
+   "id": "tunel",
+   "ini": 70.708,
+   "fin": 77.473
+  },
+  {
+   "id": "arena",
+   "ini": 77.473,
+   "fin": 86.4
+  },
+  {
+   "id": "final",
+   "ini": 86.4,
+   "fin": 91.15
+  }
+ ],
+ "lineas": [
+  {
+   "escena": "titulo",
+   "texto": "Imagina que es el año noventa después de Cristo.",
+   "sub": "Imagina que es el año 90 d. C.",
+   "ini": 0.6,
+   "fin": 3.526,
+   "palabras": [
+    {
+     "p": "Imagina",
+     "ini": 0.6,
+     "fin": 1.352
+    },
+    {
+     "p": "que",
+     "ini": 1.352,
+     "fin": 1.77
+    },
+    {
+     "p": "es",
+     "ini": 1.77,
+     "fin": 2.105
+    },
+    {
+     "p": "el",
+     "ini": 2.105,
+     "fin": 2.439
+    },
+    {
+     "p": "año",
+     "ini": 2.439,
+     "fin": 2.857
+    },
+    {
+     "p": "90",
+     "ini": 2.857,
+     "fin": 3.192
+    },
+    {
+     "p": "d. C.",
+     "ini": 3.192,
+     "fin": 3.526
+    }
+   ]
+  },
+  {
+   "escena": "titulo",
+   "texto": "Estás en Roma... y eres gladiador.",
+   "ini": 3.876,
+   "fin": 6.894,
+   "palabras": [
+    {
+     "p": "Estás",
+     "ini": 3.876,
+     "fin": 4.306
+    },
+    {
+     "p": "en",
+     "ini": 4.375,
+     "fin": 4.445
+    },
+    {
+     "p": "Roma…",
+     "ini": 4.561,
+     "fin": 5.118
+    },
+    {
+     "p": "y",
+     "ini": 5.501,
+     "fin": 5.571
+    },
+    {
+     "p": "eres",
+     "ini": 5.617,
+     "fin": 5.78
+    },
+    {
+     "p": "gladiador.",
+     "ini": 5.815,
+     "fin": 6.895
+    }
+   ]
+  },
+  {
+   "escena": "celda",
+   "texto": "Te despiertas en una celda diminuta del Ludus Magnus, la gran escuela de gladiadores, pegada al Coliseo.",
+   "ini": 7.994,
+   "fin": 14.867,
+   "palabras": [
+    {
+     "p": "Te",
+     "ini": 7.994,
+     "fin": 8.133
+    },
+    {
+     "p": "despiertas",
+     "ini": 8.18,
+     "fin": 8.772
+    },
+    {
+     "p": "en",
+     "ini": 8.83,
+     "fin": 8.876
+    },
+    {
+     "p": "una",
+     "ini": 8.934,
+     "fin": 9.085
+    },
+    {
+     "p": "celda",
+     "ini": 9.132,
+     "fin": 9.387
+    },
+    {
+     "p": "diminuta",
+     "ini": 9.434,
+     "fin": 9.968
+    },
+    {
+     "p": "del",
+     "ini": 10.026,
+     "fin": 10.13
+    },
+    {
+     "p": "Ludus",
+     "ini": 10.188,
+     "fin": 10.548
+    },
+    {
+     "p": "Magnus,",
+     "ini": 10.629,
+     "fin": 11.222
+    },
+    {
+     "p": "la",
+     "ini": 11.605,
+     "fin": 11.698
+    },
+    {
+     "p": "gran",
+     "ini": 11.756,
+     "fin": 11.953
+    },
+    {
+     "p": "escuela",
+     "ini": 11.999,
+     "fin": 12.313
+    },
+    {
+     "p": "de",
+     "ini": 12.348,
+     "fin": 12.394
+    },
+    {
+     "p": "gladiadores,",
+     "ini": 12.429,
+     "fin": 13.184
+    },
+    {
+     "p": "pegada",
+     "ini": 13.242,
+     "fin": 13.578
+    },
+    {
+     "p": "al",
+     "ini": 13.602,
+     "fin": 13.648
+    },
+    {
+     "p": "Coliseo.",
+     "ini": 13.694,
+     "fin": 14.867
+    }
+   ]
+  },
+  {
+   "escena": "entreno",
+   "texto": "Cada día golpeas un poste de madera, el palus, con espadas de madera.",
+   "ini": 15.967,
+   "fin": 20.565,
+   "palabras": [
+    {
+     "p": "Cada",
+     "ini": 15.967,
+     "fin": 16.269
+    },
+    {
+     "p": "día",
+     "ini": 16.304,
+     "fin": 16.513
+    },
+    {
+     "p": "golpeas",
+     "ini": 16.559,
+     "fin": 16.942
+    },
+    {
+     "p": "un",
+     "ini": 17.024,
+     "fin": 17.082
+    },
+    {
+     "p": "poste",
+     "ini": 17.14,
+     "fin": 17.372
+    },
+    {
+     "p": "de",
+     "ini": 17.418,
+     "fin": 17.476
+    },
+    {
+     "p": "madera,",
+     "ini": 17.523,
+     "fin": 18.01
+    },
+    {
+     "p": "el",
+     "ini": 18.057,
+     "fin": 18.173
+    },
+    {
+     "p": "palus,",
+     "ini": 18.266,
+     "fin": 18.846
+    },
+    {
+     "p": "con",
+     "ini": 18.974,
+     "fin": 19.125
+    },
+    {
+     "p": "espadas",
+     "ini": 19.183,
+     "fin": 19.531
+    },
+    {
+     "p": "de",
+     "ini": 19.566,
+     "fin": 19.613
+    },
+    {
+     "p": "madera.",
+     "ini": 19.671,
+     "fin": 20.565
+    }
+   ]
+  },
+  {
+   "escena": "entreno",
+   "texto": "Tus maestros, los doctores, no perdonan ni un error.",
+   "ini": 20.915,
+   "fin": 24.955,
+   "palabras": [
+    {
+     "p": "Tus",
+     "ini": 20.915,
+     "fin": 21.194
+    },
+    {
+     "p": "maestros,",
+     "ini": 21.263,
+     "fin": 21.925
+    },
+    {
+     "p": "los",
+     "ini": 22.018,
+     "fin": 22.192
+    },
+    {
+     "p": "doctores,",
+     "ini": 22.215,
+     "fin": 22.958
+    },
+    {
+     "p": "no",
+     "ini": 23.133,
+     "fin": 23.26
+    },
+    {
+     "p": "perdonan",
+     "ini": 23.33,
+     "fin": 23.783
+    },
+    {
+     "p": "ni",
+     "ini": 23.817,
+     "fin": 23.899
+    },
+    {
+     "p": "un",
+     "ini": 23.968,
+     "fin": 24.038
+    },
+    {
+     "p": "error.",
+     "ini": 24.085,
+     "fin": 24.955
+    }
+   ]
+  },
+  {
+   "escena": "comida",
+   "texto": "Comes cebada y habas. Tanta cebada, que en Roma os llaman hordearii: los comedores de cebada.",
+   "ini": 26.055,
+   "fin": 33.532,
+   "palabras": [
+    {
+     "p": "Comes",
+     "ini": 26.055,
+     "fin": 26.427
+    },
+    {
+     "p": "cebada",
+     "ini": 26.45,
+     "fin": 26.972
+    },
+    {
+     "p": "y",
+     "ini": 27.123,
+     "fin": 27.204
+    },
+    {
+     "p": "habas.",
+     "ini": 27.32,
+     "fin": 27.843
+    },
+    {
+     "p": "Tanta",
+     "ini": 28.122,
+     "fin": 28.516
+    },
+    {
+     "p": "cebada,",
+     "ini": 28.563,
+     "fin": 29.143
+    },
+    {
+     "p": "que",
+     "ini": 29.317,
+     "fin": 29.434
+    },
+    {
+     "p": "en",
+     "ini": 29.48,
+     "fin": 29.526
+    },
+    {
+     "p": "Roma",
+     "ini": 29.642,
+     "fin": 29.91
+    },
+    {
+     "p": "os",
+     "ini": 29.944,
+     "fin": 30.014
+    },
+    {
+     "p": "llaman",
+     "ini": 30.037,
+     "fin": 30.444
+    },
+    {
+     "p": "hordearii:",
+     "ini": 30.513,
+     "fin": 31.407
+    },
+    {
+     "p": "los",
+     "ini": 31.732,
+     "fin": 31.883
+    },
+    {
+     "p": "comedores",
+     "ini": 31.93,
+     "fin": 32.382
+    },
+    {
+     "p": "de",
+     "ini": 32.406,
+     "fin": 32.464
+    },
+    {
+     "p": "cebada.",
+     "ini": 32.51,
+     "fin": 33.532
+    }
+   ]
+  },
+  {
+   "escena": "comida",
+   "texto": "Y para recuperarte, bebes un brebaje de ceniza vegetal.",
+   "ini": 33.882,
+   "fin": 38.015,
+   "palabras": [
+    {
+     "p": "Y",
+     "ini": 33.882,
+     "fin": 34.01
+    },
+    {
+     "p": "para",
+     "ini": 34.103,
+     "fin": 34.277
+    },
+    {
+     "p": "recuperarte,",
+     "ini": 34.335,
+     "fin": 35.229
+    },
+    {
+     "p": "bebes",
+     "ini": 35.438,
+     "fin": 35.705
+    },
+    {
+     "p": "un",
+     "ini": 35.821,
+     "fin": 35.879
+    },
+    {
+     "p": "brebaje",
+     "ini": 35.937,
+     "fin": 36.425
+    },
+    {
+     "p": "de",
+     "ini": 36.471,
+     "fin": 36.541
+    },
+    {
+     "p": "ceniza",
+     "ini": 36.576,
+     "fin": 36.947
+    },
+    {
+     "p": "vegetal.",
+     "ini": 36.982,
+     "fin": 38.015
+    }
+   ]
+  },
+  {
+   "escena": "dato",
+   "texto": "Pero no eres un condenado a muerte. Luchas tres o cuatro veces al año...",
+   "sub": "Pero no eres un condenado a muerte. Luchas 3 o 4 veces al año…",
+   "ini": 39.115,
+   "fin": 43.806,
+   "palabras": [
+    {
+     "p": "Pero",
+     "ini": 39.115,
+     "fin": 39.359
+    },
+    {
+     "p": "no",
+     "ini": 39.428,
+     "fin": 39.521
+    },
+    {
+     "p": "eres",
+     "ini": 39.556,
+     "fin": 39.695
+    },
+    {
+     "p": "un",
+     "ini": 39.777,
+     "fin": 39.835
+    },
+    {
+     "p": "condenado",
+     "ini": 39.893,
+     "fin": 40.334
+    },
+    {
+     "p": "a",
+     "ini": 40.357,
+     "fin": 40.38
+    },
+    {
+     "p": "muerte.",
+     "ini": 40.415,
+     "fin": 40.961
+    },
+    {
+     "p": "Luchas",
+     "ini": 41.205,
+     "fin": 41.576
+    },
+    {
+     "p": "3",
+     "ini": 41.646,
+     "fin": 41.948
+    },
+    {
+     "p": "o",
+     "ini": 42.041,
+     "fin": 42.11
+    },
+    {
+     "p": "4",
+     "ini": 42.157,
+     "fin": 42.47
+    },
+    {
+     "p": "veces",
+     "ini": 42.505,
+     "fin": 42.749
+    },
+    {
+     "p": "al",
+     "ini": 42.819,
+     "fin": 42.9
+    },
+    {
+     "p": "año…",
+     "ini": 42.923,
+     "fin": 43.805
+    }
+   ]
+  },
+  {
+   "escena": "dato",
+   "texto": "y en esta época, solo uno de cada cinco combates termina con la muerte del perdedor.",
+   "sub": "y en esta época, solo 1 de cada 5 combates termina con la muerte del perdedor.",
+   "ini": 44.156,
+   "fin": 49.775,
+   "palabras": [
+    {
+     "p": "y",
+     "ini": 44.156,
+     "fin": 44.26
+    },
+    {
+     "p": "en",
+     "ini": 44.319,
+     "fin": 44.377
+    },
+    {
+     "p": "esta",
+     "ini": 44.446,
+     "fin": 44.644
+    },
+    {
+     "p": "época,",
+     "ini": 44.713,
+     "fin": 45.236
+    },
+    {
+     "p": "solo",
+     "ini": 45.387,
+     "fin": 45.793
+    },
+    {
+     "p": "1",
+     "ini": 45.886,
+     "fin": 46.025
+    },
+    {
+     "p": "de",
+     "ini": 46.083,
+     "fin": 46.141
+    },
+    {
+     "p": "cada",
+     "ini": 46.188,
+     "fin": 46.374
+    },
+    {
+     "p": "5",
+     "ini": 46.42,
+     "fin": 46.71
+    },
+    {
+     "p": "combates",
+     "ini": 46.757,
+     "fin": 47.36
+    },
+    {
+     "p": "termina",
+     "ini": 47.604,
+     "fin": 48.011
+    },
+    {
+     "p": "con",
+     "ini": 48.057,
+     "fin": 48.173
+    },
+    {
+     "p": "la",
+     "ini": 48.208,
+     "fin": 48.266
+    },
+    {
+     "p": "muerte",
+     "ini": 48.312,
+     "fin": 48.591
+    },
+    {
+     "p": "del",
+     "ini": 48.626,
+     "fin": 48.73
+    },
+    {
+     "p": "perdedor.",
+     "ini": 48.788,
+     "fin": 49.775
+    }
+   ]
+  },
+  {
+   "escena": "cena",
+   "texto": "Anoche celebrasteis la cena libera: un banquete público antes de los juegos. Para algunos, el último.",
+   "ini": 50.875,
+   "fin": 58.955,
+   "palabras": [
+    {
+     "p": "Anoche",
+     "ini": 50.875,
+     "fin": 51.351
+    },
+    {
+     "p": "celebrasteis",
+     "ini": 51.397,
+     "fin": 52.233
+    },
+    {
+     "p": "la",
+     "ini": 52.326,
+     "fin": 52.442
+    },
+    {
+     "p": "cena",
+     "ini": 52.489,
+     "fin": 52.756
+    },
+    {
+     "p": "libera:",
+     "ini": 52.802,
+     "fin": 53.336
+    },
+    {
+     "p": "un",
+     "ini": 53.719,
+     "fin": 53.847
+    },
+    {
+     "p": "banquete",
+     "ini": 53.905,
+     "fin": 54.381
+    },
+    {
+     "p": "público",
+     "ini": 54.451,
+     "fin": 54.985
+    },
+    {
+     "p": "antes",
+     "ini": 55.066,
+     "fin": 55.438
+    },
+    {
+     "p": "de",
+     "ini": 55.461,
+     "fin": 55.507
+    },
+    {
+     "p": "los",
+     "ini": 55.554,
+     "fin": 55.693
+    },
+    {
+     "p": "juegos.",
+     "ini": 55.74,
+     "fin": 56.355
+    },
+    {
+     "p": "Para",
+     "ini": 56.738,
+     "fin": 57.017
+    },
+    {
+     "p": "algunos,",
+     "ini": 57.04,
+     "fin": 57.725
+    },
+    {
+     "p": "el",
+     "ini": 57.841,
+     "fin": 57.98
+    },
+    {
+     "p": "último.",
+     "ini": 58.096,
+     "fin": 58.956
+    }
+   ]
+  },
+  {
+   "escena": "juegos",
+   "texto": "Hoy hay juegos. Por la mañana, cacerías de fieras. Al mediodía, ejecuciones.",
+   "ini": 60.055,
+   "fin": 66.743,
+   "palabras": [
+    {
+     "p": "Hoy",
+     "ini": 60.055,
+     "fin": 60.322
+    },
+    {
+     "p": "hay",
+     "ini": 60.345,
+     "fin": 60.438
+    },
+    {
+     "p": "juegos.",
+     "ini": 60.485,
+     "fin": 61.158
+    },
+    {
+     "p": "Por",
+     "ini": 61.367,
+     "fin": 61.529
+    },
+    {
+     "p": "la",
+     "ini": 61.588,
+     "fin": 61.657
+    },
+    {
+     "p": "mañana,",
+     "ini": 61.704,
+     "fin": 62.354
+    },
+    {
+     "p": "cacerías",
+     "ini": 62.598,
+     "fin": 63.19
+    },
+    {
+     "p": "de",
+     "ini": 63.213,
+     "fin": 63.259
+    },
+    {
+     "p": "fieras.",
+     "ini": 63.329,
+     "fin": 63.968
+    },
+    {
+     "p": "Al",
+     "ini": 64.211,
+     "fin": 64.351
+    },
+    {
+     "p": "mediodía,",
+     "ini": 64.397,
+     "fin": 65.163
+    },
+    {
+     "p": "ejecuciones.",
+     "ini": 65.338,
+     "fin": 66.742
+    }
+   ]
+  },
+  {
+   "escena": "juegos",
+   "texto": "Y por la tarde... os toca a vosotros.",
+   "ini": 67.093,
+   "fin": 70.158,
+   "palabras": [
+    {
+     "p": "Y",
+     "ini": 67.093,
+     "fin": 67.221
+    },
+    {
+     "p": "por",
+     "ini": 67.314,
+     "fin": 67.43
+    },
+    {
+     "p": "la",
+     "ini": 67.476,
+     "fin": 67.557
+    },
+    {
+     "p": "tarde…",
+     "ini": 67.615,
+     "fin": 68.231
+    },
+    {
+     "p": "os",
+     "ini": 68.556,
+     "fin": 68.695
+    },
+    {
+     "p": "toca",
+     "ini": 68.765,
+     "fin": 68.997
+    },
+    {
+     "p": "a",
+     "ini": 69.02,
+     "fin": 69.043
+    },
+    {
+     "p": "vosotros.",
+     "ini": 69.078,
+     "fin": 70.158
+    }
+   ]
+  },
+  {
+   "escena": "tunel",
+   "texto": "Cruzas el túnel que une tu escuela con el Coliseo. Arriba, miles de gargantas rugen.",
+   "ini": 71.258,
+   "fin": 76.923,
+   "palabras": [
+    {
+     "p": "Cruzas",
+     "ini": 71.258,
+     "fin": 71.664
+    },
+    {
+     "p": "el",
+     "ini": 71.722,
+     "fin": 71.792
+    },
+    {
+     "p": "túnel",
+     "ini": 71.862,
+     "fin": 72.21
+    },
+    {
+     "p": "que",
+     "ini": 72.303,
+     "fin": 72.407
+    },
+    {
+     "p": "une",
+     "ini": 72.489,
+     "fin": 72.64
+    },
+    {
+     "p": "tu",
+     "ini": 72.686,
+     "fin": 72.767
+    },
+    {
+     "p": "escuela",
+     "ini": 72.802,
+     "fin": 73.139
+    },
+    {
+     "p": "con",
+     "ini": 73.185,
+     "fin": 73.301
+    },
+    {
+     "p": "el",
+     "ini": 73.348,
+     "fin": 73.394
+    },
+    {
+     "p": "Coliseo.",
+     "ini": 73.441,
+     "fin": 74.079
+    },
+    {
+     "p": "Arriba,",
+     "ini": 74.404,
+     "fin": 74.962
+    },
+    {
+     "p": "miles",
+     "ini": 75.054,
+     "fin": 75.38
+    },
+    {
+     "p": "de",
+     "ini": 75.403,
+     "fin": 75.449
+    },
+    {
+     "p": "gargantas",
+     "ini": 75.496,
+     "fin": 76.018
+    },
+    {
+     "p": "rugen.",
+     "ini": 76.088,
+     "fin": 76.924
+    }
+   ]
+  },
+  {
+   "escena": "arena",
+   "texto": "La puerta se abre. La arena quema bajo tus pies.",
+   "ini": 78.023,
+   "fin": 81.414,
+   "palabras": [
+    {
+     "p": "La",
+     "ini": 78.023,
+     "fin": 78.151
+    },
+    {
+     "p": "puerta",
+     "ini": 78.22,
+     "fin": 78.487
+    },
+    {
+     "p": "se",
+     "ini": 78.534,
+     "fin": 78.615
+    },
+    {
+     "p": "abre.",
+     "ini": 78.673,
+     "fin": 79.045
+    },
+    {
+     "p": "La",
+     "ini": 79.288,
+     "fin": 79.428
+    },
+    {
+     "p": "arena",
+     "ini": 79.451,
+     "fin": 79.753
+    },
+    {
+     "p": "quema",
+     "ini": 79.846,
+     "fin": 80.101
+    },
+    {
+     "p": "bajo",
+     "ini": 80.148,
+     "fin": 80.357
+    },
+    {
+     "p": "tus",
+     "ini": 80.403,
+     "fin": 80.542
+    },
+    {
+     "p": "pies.",
+     "ini": 80.6,
+     "fin": 81.413
+    }
+   ]
+  },
+  {
+   "escena": "arena",
+   "texto": "Y si caes, un solo hombre decidirá si vives... o mueres.",
+   "ini": 81.764,
+   "fin": 85.85,
+   "palabras": [
+    {
+     "p": "Y",
+     "ini": 81.764,
+     "fin": 81.868
+    },
+    {
+     "p": "si",
+     "ini": 81.95,
+     "fin": 82.066
+    },
+    {
+     "p": "caes,",
+     "ini": 82.136,
+     "fin": 82.519
+    },
+    {
+     "p": "un",
+     "ini": 82.565,
+     "fin": 82.635
+    },
+    {
+     "p": "solo",
+     "ini": 82.681,
+     "fin": 82.925
+    },
+    {
+     "p": "hombre",
+     "ini": 82.948,
+     "fin": 83.227
+    },
+    {
+     "p": "decidirá",
+     "ini": 83.273,
+     "fin": 83.831
+    },
+    {
+     "p": "si",
+     "ini": 83.923,
+     "fin": 84.028
+    },
+    {
+     "p": "vives…",
+     "ini": 84.086,
+     "fin": 84.562
+    },
+    {
+     "p": "o",
+     "ini": 85.003,
+     "fin": 85.073
+    },
+    {
+     "p": "mueres.",
+     "ini": 85.131,
+     "fin": 85.851
+    }
+   ]
+  },
+  {
+   "escena": "final",
+   "texto": "",
+   "ini": 86.9502947845805,
+   "fin": 90.9502947845805,
+   "palabras": []
+  }
+ ]
+}

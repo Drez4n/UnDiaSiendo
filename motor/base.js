@@ -105,7 +105,7 @@ function subtitulos(ctx, t) {
     if (!g) return;
     ctx.save();
     ctx.font = '900 80px Montserrat'; ctx.textBaseline = 'alphabetic'; ctx.lineJoin = 'round';
-    const esp = 22, palabras = g.map(w => ({ ...w, txt: w.p.toUpperCase() }));
+    const esp = 30, palabras = g.map(w => ({ ...w, txt: w.p.toUpperCase() }));
     // reparto en líneas de máx 900 px
     const lineas = [[]]; let ancho = 0;
     palabras.forEach(w => { const m = ctx.measureText(w.txt).width;

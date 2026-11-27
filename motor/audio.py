@@ -177,6 +177,30 @@ def ambiente(nombre, a, b, buf):
         s = lp(rng.normal(0, 1, n), 60, 4); s = s / (np.abs(s).max() + 1e-9)
         sw = np.clip(t / dur, 0, 1) ** 2
         add(buf, s * sw * fade(n, 0.1, 0.25) * 0.9, a)
+    elif nombre == "golpes":  # espada de madera contra poste
+        p = 0.3
+        while p < dur - 0.3:
+            l = 5000; tt = np.arange(l) / SR
+            k = (bp(rng.normal(0, 1, l), 500, 2500) * np.exp(-tt * 45) + np.sin(2 * np.pi * 210 * tt) * np.exp(-tt * 35) * 0.6)
+            add(buf, k, a + p, 0.45 * rng.uniform(0.6, 1))
+            p += rng.choice([0.35, 0.5, 0.8])
+    elif nombre in ("multitud", "multitud_lejos"):
+        s = np.zeros(n)
+        for v in range(14):
+            m = lp((rng.random(n) < 0.002).astype(float), 2); m = m / (m.max() + 1e-9)
+            s += bp(rng.normal(0, 1, n), 200 + 40 * v, 1200 + 150 * v) * (0.5 + m)
+        s = s / (np.abs(s).max() + 1e-9)
+        ola = 0.7 + 0.3 * np.sin(2 * np.pi * t / 4.5) ** 2
+        if nombre == "multitud_lejos":
+            s = lp(s, 500, 2) * 2.5
+        add(buf, s * ola * f * (0.5 if nombre == "multitud" else 0.3), a)
+    elif nombre == "pasos":
+        p = 0.3
+        while p < dur - 0.3:
+            l = 9000; tt = np.arange(l) / SR
+            st = bp(rng.normal(0, 1, l), 150, 1500) * np.exp(-tt * 40)
+            st = st + np.concatenate([np.zeros(1800), st[:-1800]]) * 0.35  # eco del túnel
+            add(buf, st, a + p, 0.22); p += 0.62
     elif nombre == "viento":
         s = bp(rng.normal(0, 1, n), 200, 1200) * (0.5 + 0.5 * np.sin(2 * np.pi * 0.11 * t + 1) ** 2)
         add(buf, s * f * 0.05, a)

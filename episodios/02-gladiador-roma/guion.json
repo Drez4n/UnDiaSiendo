@@ -1,0 +1,148 @@
+{
+ "titulo": "Un día siendo gladiador en Roma",
+ "subtitulo": "Año 90 d. C.",
+ "voz": "elevenlabs:nPczCjzI2devNBz1zQrb",
+ "voz_nombre": "Brian (ElevenLabs, Deep, Resonant)",
+ "modelo": "eleven_multilingual_v2",
+ "ajustes": {
+  "stability": 0.5,
+  "similarity_boost": 0.8,
+  "style": 0.2,
+  "use_speaker_boost": true
+ },
+ "grave": 1.0,
+ "formantes": 1.0,
+ "eq": "suave",
+ "tono": "D",
+ "lineas": [
+  {
+   "escena": "titulo",
+   "texto": "Imagina que es el año noventa después de Cristo.",
+   "sub": "Imagina que es el año 90 d. C."
+  },
+  {
+   "escena": "titulo",
+   "texto": "Estás en Roma... y eres gladiador."
+  },
+  {
+   "escena": "celda",
+   "texto": "Te despiertas en una celda diminuta del Ludus Magnus, la gran escuela de gladiadores, pegada al Coliseo."
+  },
+  {
+   "escena": "entreno",
+   "texto": "Cada día golpeas un poste de madera, el palus, con espadas de madera."
+  },
+  {
+   "escena": "entreno",
+   "texto": "Tus maestros, los doctores, no perdonan ni un error."
+  },
+  {
+   "escena": "comida",
+   "texto": "Comes cebada y habas. Tanta cebada, que en Roma os llaman hordearii: los comedores de cebada."
+  },
+  {
+   "escena": "comida",
+   "texto": "Y para recuperarte, bebes un brebaje de ceniza vegetal."
+  },
+  {
+   "escena": "dato",
+   "texto": "Pero no eres un condenado a muerte. Luchas tres o cuatro veces al año...",
+   "sub": "Pero no eres un condenado a muerte. Luchas 3 o 4 veces al año…"
+  },
+  {
+   "escena": "dato",
+   "texto": "y en esta época, solo uno de cada cinco combates termina con la muerte del perdedor.",
+   "sub": "y en esta época, solo 1 de cada 5 combates termina con la muerte del perdedor."
+  },
+  {
+   "escena": "cena",
+   "texto": "Anoche celebrasteis la cena libera: un banquete público antes de los juegos. Para algunos, el último."
+  },
+  {
+   "escena": "juegos",
+   "texto": "Hoy hay juegos. Por la mañana, cacerías de fieras. Al mediodía, ejecuciones."
+  },
+  {
+   "escena": "juegos",
+   "texto": "Y por la tarde... os toca a vosotros."
+  },
+  {
+   "escena": "tunel",
+   "texto": "Cruzas el túnel que une tu escuela con el Coliseo. Arriba, miles de gargantas rugen."
+  },
+  {
+   "escena": "arena",
+   "texto": "La puerta se abre. La arena quema bajo tus pies."
+  },
+  {
+   "escena": "arena",
+   "texto": "Y si caes, un solo hombre decidirá si vives... o mueres."
+  },
+  {
+   "escena": "final",
+   "texto": ""
+  }
+ ],
+ "sonido": {
+  "titulo": {
+   "musica": "intro",
+   "ambiente": [
+    "viento"
+   ]
+  },
+  "celda": {
+   "musica": "calma",
+   "ambiente": [
+    "viento",
+    "pajaros"
+   ]
+  },
+  "entreno": {
+   "musica": "pulso",
+   "ambiente": [
+    "golpes",
+    "gente_lejos"
+   ]
+  },
+  "comida": {
+   "musica": "calma",
+   "ambiente": [
+    "gente_lejos"
+   ]
+  },
+  "dato": {
+   "musica": "pulso",
+   "ambiente": []
+  },
+  "cena": {
+   "musica": "calma",
+   "ambiente": [
+    "gente",
+    "lampara"
+   ]
+  },
+  "juegos": {
+   "musica": "pulso",
+   "ambiente": [
+    "multitud"
+   ]
+  },
+  "tunel": {
+   "musica": "tension",
+   "ambiente": [
+    "multitud_lejos",
+    "pasos"
+   ]
+  },
+  "arena": {
+   "musica": "tension",
+   "ambiente": [
+    "multitud"
+   ]
+  },
+  "final": {
+   "musica": "cierre",
+   "ambiente": []
+  }
+ }
+}
