@@ -20,6 +20,7 @@ function mezcla(a, b, k) { const A = hex2rgb(a), B = hex2rgb(b); return `rgb(${A
 function figura(ctx, o) {
   const c = Object.assign({ piel: PIEL, tunica: TUNICA, sombra: TUNICA_OSC, pelo: PELO, cinto: CINTO, delantal: null, manto: null }, o.col || {});
   const pielT = mezcla(c.piel, '#000000', 0.25);
+  const piernas = c.piernas || c.piel, piernasT = c.piernas ? mezcla(c.piernas, '#000000', 0.25) : pielT;
   ctx.save(); ctx.translate(o.x, o.y); ctx.scale(o.s * o.dir, o.s);
   const sw = o.fase == null ? 0 : Math.sin(o.fase) * 0.38;
   const bob = o.fase == null ? 0 : Math.abs(Math.cos(o.fase)) * -8;
@@ -43,7 +44,7 @@ function figura(ctx, o) {
   const bD = o.bD || (o.fase == null ? [0.1, 0.15] : [sw * 0.8, 0.25]);
   // capa trasera
   brazo(-10, -432, bT, pielT, mezcla(c.tunica, '#000000', 0.3), o.manoT);
-  pierna(-8, o.fase == null ? -0.04 : -sw, pielT);
+  pierna(-8, o.fase == null ? -0.04 : -sw, piernasT);
   // cuerpo
   const bajo = o.bajo ?? 120;
   ctx.fillStyle = grad(ctx, -70, 0, 70, 0, [[0, c.sombra], [0.55, c.tunica], [1, c.tunica]]);
@@ -53,7 +54,7 @@ function figura(ctx, o) {
   // pliegues
   ctx.strokeStyle = 'rgba(0,0,0,0.12)'; ctx.lineWidth = 4;
   [[-30, -290], [5, -285], [35, -290]].forEach(([x, y]) => { ctx.beginPath(); ctx.moveTo(x, y); ctx.quadraticCurveTo(x + 6, (y - bajo) / 2, x + sw * 15, -bajo - 6); ctx.stroke(); });
-  pierna(10, o.fase == null ? 0.04 : sw, c.piel);
+  pierna(10, o.fase == null ? 0.04 : sw, piernas);
   if (c.delantal) {
     ctx.fillStyle = c.delantal;
     ctx.beginPath(); ctx.moveTo(-6, -305); ctx.lineTo(66, -305); ctx.lineTo(76 + sw * 18, -132); ctx.quadraticCurveTo(35, -124, -4 + sw * 18, -132); ctx.closePath(); ctx.fill();

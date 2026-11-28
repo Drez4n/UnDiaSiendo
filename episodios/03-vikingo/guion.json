@@ -1,0 +1,140 @@
+{
+ "titulo": "Un día siendo vikingo",
+ "subtitulo": "Año 900",
+ "voz": "elevenlabs:nPczCjzI2devNBz1zQrb",
+ "voz_nombre": "Brian (ElevenLabs, Deep, Resonant)",
+ "modelo": "eleven_multilingual_v2",
+ "ajustes": {
+  "stability": 0.5,
+  "similarity_boost": 0.8,
+  "style": 0.2,
+  "use_speaker_boost": true
+ },
+ "grave": 1.0,
+ "formantes": 1.0,
+ "eq": "suave",
+ "tono": "A",
+ "lineas": [
+  {
+   "escena": "titulo",
+   "texto": "Imagina que es el año novecientos.",
+   "sub": "Imagina que es el año 900."
+  },
+  {
+   "escena": "titulo",
+   "texto": "Vives junto a un fiordo de Noruega... y eres vikingo."
+  },
+  {
+   "escena": "casa",
+   "texto": "Te despiertas en la casa larga: una sola sala, con un fuego en el centro, donde viven varias familias juntas."
+  },
+  {
+   "escena": "granja",
+   "texto": "Porque antes que guerrero, eres granjero. Ordeñas las vacas, cuidas las ovejas y siembras la cebada."
+  },
+  {
+   "escena": "comida",
+   "texto": "Comes gachas de cebada, queso, arenque salado y bacalao seco, que aguanta meses sin estropearse."
+  },
+  {
+   "escena": "telar",
+   "texto": "Y en casa, la lana se hila y se teje sin descanso: ropa, mantas... y hasta las velas de los barcos."
+  },
+  {
+   "escena": "barco",
+   "texto": "Cuando llega el verano y la cosecha ya está sembrada, subes al barco."
+  },
+  {
+   "escena": "barco",
+   "texto": "Roble, remos y una vela enorme. Con buen viento, puede superar los doce nudos.",
+   "sub": "Roble, remos y una vela enorme. Con buen viento, puede superar los 12 nudos."
+  },
+  {
+   "escena": "mito",
+   "texto": "Por cierto: tu casco nunca tuvo cuernos."
+  },
+  {
+   "escena": "mito",
+   "texto": "Esa imagen se inventó en mil ochocientos setenta y seis, para el vestuario de una ópera de Wagner.",
+   "sub": "Esa imagen se inventó en 1876, para el vestuario de una ópera de Wagner."
+  },
+  {
+   "escena": "noche",
+   "texto": "Por la noche, junto al fuego, escuchas historias de Odín, de Thor... y del Valhalla."
+  },
+  {
+   "escena": "partida",
+   "texto": "Mañana zarpas hacia tierras lejanas. Algunos no volverán..."
+  },
+  {
+   "escena": "partida",
+   "texto": "pero sus nombres vivirán en las sagas."
+  },
+  {
+   "escena": "final",
+   "texto": ""
+  }
+ ],
+ "sonido": {
+  "titulo": {
+   "musica": "intro",
+   "ambiente": [
+    "viento"
+   ]
+  },
+  "casa": {
+   "musica": "calma",
+   "ambiente": [
+    "lampara",
+    "viento"
+   ]
+  },
+  "granja": {
+   "musica": "calma",
+   "ambiente": [
+    "pajaros",
+    "viento"
+   ]
+  },
+  "comida": {
+   "musica": "calma",
+   "ambiente": [
+    "lampara"
+   ]
+  },
+  "telar": {
+   "musica": "calma",
+   "ambiente": [
+    "golpes"
+   ]
+  },
+  "barco": {
+   "musica": "pulso",
+   "ambiente": [
+    "olas",
+    "viento"
+   ]
+  },
+  "mito": {
+   "musica": "pulso",
+   "ambiente": []
+  },
+  "noche": {
+   "musica": "misterio",
+   "ambiente": [
+    "fuego"
+   ]
+  },
+  "partida": {
+   "musica": "pulso",
+   "ambiente": [
+    "olas",
+    "viento"
+   ]
+  },
+  "final": {
+   "musica": "cierre",
+   "ambiente": []
+  }
+ }
+}

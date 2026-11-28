@@ -1,0 +1,1003 @@
+{
+ "duracion": 85.899,
+ "titulo": "Un día siendo vikingo",
+ "subtitulo": "Año 900",
+ "escenas": [
+  {
+   "id": "titulo",
+   "ini": 0,
+   "fin": 7.862
+  },
+  {
+   "id": "casa",
+   "ini": 7.862,
+   "fin": 16.857
+  },
+  {
+   "id": "granja",
+   "ini": 16.857,
+   "fin": 25.527
+  },
+  {
+   "id": "comida",
+   "ini": 25.527,
+   "fin": 34.15
+  },
+  {
+   "id": "telar",
+   "ini": 34.15,
+   "fin": 43.005
+  },
+  {
+   "id": "barco",
+   "ini": 43.005,
+   "fin": 55.322
+  },
+  {
+   "id": "mito",
+   "ini": 55.322,
+   "fin": 65.921
+  },
+  {
+   "id": "noche",
+   "ini": 65.921,
+   "fin": 73.383
+  },
+  {
+   "id": "partida",
+   "ini": 73.383,
+   "fin": 81.149
+  },
+  {
+   "id": "final",
+   "ini": 81.149,
+   "fin": 85.899
+  }
+ ],
+ "lineas": [
+  {
+   "escena": "titulo",
+   "texto": "Imagina que es el año novecientos.",
+   "sub": "Imagina que es el año 900.",
+   "ini": 0.6,
+   "fin": 3.154,
+   "palabras": [
+    {
+     "p": "Imagina",
+     "ini": 0.6,
+     "fin": 1.227
+    },
+    {
+     "p": "que",
+     "ini": 1.297,
+     "fin": 1.389
+    },
+    {
+     "p": "es",
+     "ini": 1.413,
+     "fin": 1.471
+    },
+    {
+     "p": "el",
+     "ini": 1.529,
+     "fin": 1.61
+    },
+    {
+     "p": "año",
+     "ini": 1.668,
+     "fin": 1.831
+    },
+    {
+     "p": "900.",
+     "ini": 1.877,
+     "fin": 3.154
+    }
+   ]
+  },
+  {
+   "escena": "titulo",
+   "texto": "Vives junto a un fiordo de Noruega... y eres vikingo.",
+   "ini": 3.504,
+   "fin": 7.312,
+   "palabras": [
+    {
+     "p": "Vives",
+     "ini": 3.504,
+     "fin": 3.829
+    },
+    {
+     "p": "junto",
+     "ini": 3.876,
+     "fin": 4.143
+    },
+    {
+     "p": "a",
+     "ini": 4.166,
+     "fin": 4.189
+    },
+    {
+     "p": "un",
+     "ini": 4.27,
+     "fin": 4.34
+    },
+    {
+     "p": "fiordo",
+     "ini": 4.41,
+     "fin": 4.769
+    },
+    {
+     "p": "de",
+     "ini": 4.828,
+     "fin": 4.909
+    },
+    {
+     "p": "Noruega…",
+     "ini": 4.99,
+     "fin": 5.652
+    },
+    {
+     "p": "y",
+     "ini": 5.977,
+     "fin": 6.047
+    },
+    {
+     "p": "eres",
+     "ini": 6.081,
+     "fin": 6.256
+    },
+    {
+     "p": "vikingo.",
+     "ini": 6.302,
+     "fin": 7.312
+    }
+   ]
+  },
+  {
+   "escena": "casa",
+   "texto": "Te despiertas en la casa larga: una sola sala, con un fuego en el centro, donde viven varias familias juntas.",
+   "ini": 8.412,
+   "fin": 16.307,
+   "palabras": [
+    {
+     "p": "Te",
+     "ini": 8.412,
+     "fin": 8.563
+    },
+    {
+     "p": "despiertas",
+     "ini": 8.609,
+     "fin": 9.143
+    },
+    {
+     "p": "en",
+     "ini": 9.19,
+     "fin": 9.236
+    },
+    {
+     "p": "la",
+     "ini": 9.283,
+     "fin": 9.341
+    },
+    {
+     "p": "casa",
+     "ini": 9.399,
+     "fin": 9.643
+    },
+    {
+     "p": "larga:",
+     "ini": 9.701,
+     "fin": 10.212
+    },
+    {
+     "p": "una",
+     "ini": 10.653,
+     "fin": 10.85
+    },
+    {
+     "p": "sola",
+     "ini": 10.908,
+     "fin": 11.129
+    },
+    {
+     "p": "sala,",
+     "ini": 11.187,
+     "fin": 11.732
+    },
+    {
+     "p": "con",
+     "ini": 11.907,
+     "fin": 12.081
+    },
+    {
+     "p": "un",
+     "ini": 12.162,
+     "fin": 12.232
+    },
+    {
+     "p": "fuego",
+     "ini": 12.313,
+     "fin": 12.592
+    },
+    {
+     "p": "en",
+     "ini": 12.615,
+     "fin": 12.661
+    },
+    {
+     "p": "el",
+     "ini": 12.731,
+     "fin": 12.801
+    },
+    {
+     "p": "centro,",
+     "ini": 12.859,
+     "fin": 13.544
+    },
+    {
+     "p": "donde",
+     "ini": 13.718,
+     "fin": 14.008
+    },
+    {
+     "p": "viven",
+     "ini": 14.054,
+     "fin": 14.368
+    },
+    {
+     "p": "varias",
+     "ini": 14.438,
+     "fin": 14.797
+    },
+    {
+     "p": "familias",
+     "ini": 14.856,
+     "fin": 15.239
+    },
+    {
+     "p": "juntas.",
+     "ini": 15.297,
+     "fin": 16.307
+    }
+   ]
+  },
+  {
+   "escena": "granja",
+   "texto": "Porque antes que guerrero, eres granjero. Ordeñas las vacas, cuidas las ovejas y siembras la cebada.",
+   "ini": 17.407,
+   "fin": 24.977,
+   "palabras": [
+    {
+     "p": "Porque",
+     "ini": 17.407,
+     "fin": 17.755
+    },
+    {
+     "p": "antes",
+     "ini": 17.802,
+     "fin": 18.069
+    },
+    {
+     "p": "que",
+     "ini": 18.115,
+     "fin": 18.185
+    },
+    {
+     "p": "guerrero,",
+     "ini": 18.255,
+     "fin": 18.893
+    },
+    {
+     "p": "eres",
+     "ini": 19.067,
+     "fin": 19.288
+    },
+    {
+     "p": "granjero.",
+     "ini": 19.334,
+     "fin": 19.996
+    },
+    {
+     "p": "Ordeñas",
+     "ini": 20.321,
+     "fin": 20.809
+    },
+    {
+     "p": "las",
+     "ini": 20.867,
+     "fin": 20.983
+    },
+    {
+     "p": "vacas,",
+     "ini": 21.041,
+     "fin": 21.633
+    },
+    {
+     "p": "cuidas",
+     "ini": 21.912,
+     "fin": 22.283
+    },
+    {
+     "p": "las",
+     "ini": 22.341,
+     "fin": 22.481
+    },
+    {
+     "p": "ovejas",
+     "ini": 22.562,
+     "fin": 23.073
+    },
+    {
+     "p": "y",
+     "ini": 23.224,
+     "fin": 23.305
+    },
+    {
+     "p": "siembras",
+     "ini": 23.421,
+     "fin": 23.851
+    },
+    {
+     "p": "la",
+     "ini": 23.897,
+     "fin": 23.967
+    },
+    {
+     "p": "cebada.",
+     "ini": 24.013,
+     "fin": 24.977
+    }
+   ]
+  },
+  {
+   "escena": "comida",
+   "texto": "Comes gachas de cebada, queso, arenque salado y bacalao seco, que aguanta meses sin estropearse.",
+   "ini": 26.077,
+   "fin": 33.6,
+   "palabras": [
+    {
+     "p": "Comes",
+     "ini": 26.077,
+     "fin": 26.437
+    },
+    {
+     "p": "gachas",
+     "ini": 26.518,
+     "fin": 26.913
+    },
+    {
+     "p": "de",
+     "ini": 26.948,
+     "fin": 27.006
+    },
+    {
+     "p": "cebada,",
+     "ini": 27.052,
+     "fin": 27.644
+    },
+    {
+     "p": "queso,",
+     "ini": 27.818,
+     "fin": 28.422
+    },
+    {
+     "p": "arenque",
+     "ini": 28.503,
+     "fin": 28.921
+    },
+    {
+     "p": "salado",
+     "ini": 28.979,
+     "fin": 29.514
+    },
+    {
+     "p": "y",
+     "ini": 29.757,
+     "fin": 29.85
+    },
+    {
+     "p": "bacalao",
+     "ini": 29.932,
+     "fin": 30.431
+    },
+    {
+     "p": "seco,",
+     "ini": 30.5,
+     "fin": 31.034
+    },
+    {
+     "p": "que",
+     "ini": 31.313,
+     "fin": 31.418
+    },
+    {
+     "p": "aguanta",
+     "ini": 31.452,
+     "fin": 31.859
+    },
+    {
+     "p": "meses",
+     "ini": 31.94,
+     "fin": 32.3
+    },
+    {
+     "p": "sin",
+     "ini": 32.323,
+     "fin": 32.486
+    },
+    {
+     "p": "estropearse.",
+     "ini": 32.544,
+     "fin": 33.6
+    }
+   ]
+  },
+  {
+   "escena": "telar",
+   "texto": "Y en casa, la lana se hila y se teje sin descanso: ropa, mantas... y hasta las velas de los barcos.",
+   "ini": 34.7,
+   "fin": 42.455,
+   "palabras": [
+    {
+     "p": "Y",
+     "ini": 34.7,
+     "fin": 34.793
+    },
+    {
+     "p": "en",
+     "ini": 34.863,
+     "fin": 34.932
+    },
+    {
+     "p": "casa,",
+     "ini": 35.002,
+     "fin": 35.431
+    },
+    {
+     "p": "la",
+     "ini": 35.524,
+     "fin": 35.652
+    },
+    {
+     "p": "lana",
+     "ini": 35.722,
+     "fin": 35.954
+    },
+    {
+     "p": "se",
+     "ini": 36.024,
+     "fin": 36.174
+    },
+    {
+     "p": "hila",
+     "ini": 36.209,
+     "fin": 36.476
+    },
+    {
+     "p": "y",
+     "ini": 36.511,
+     "fin": 36.534
+    },
+    {
+     "p": "se",
+     "ini": 36.581,
+     "fin": 36.662
+    },
+    {
+     "p": "teje",
+     "ini": 36.72,
+     "fin": 36.941
+    },
+    {
+     "p": "sin",
+     "ini": 36.976,
+     "fin": 37.092
+    },
+    {
+     "p": "descanso:",
+     "ini": 37.126,
+     "fin": 37.858
+    },
+    {
+     "p": "ropa,",
+     "ini": 38.299,
+     "fin": 38.914
+    },
+    {
+     "p": "mantas…",
+     "ini": 39.089,
+     "fin": 39.901
+    },
+    {
+     "p": "y",
+     "ini": 40.18,
+     "fin": 40.25
+    },
+    {
+     "p": "hasta",
+     "ini": 40.296,
+     "fin": 40.505
+    },
+    {
+     "p": "las",
+     "ini": 40.551,
+     "fin": 40.691
+    },
+    {
+     "p": "velas",
+     "ini": 40.76,
+     "fin": 41.039
+    },
+    {
+     "p": "de",
+     "ini": 41.062,
+     "fin": 41.109
+    },
+    {
+     "p": "los",
+     "ini": 41.155,
+     "fin": 41.271
+    },
+    {
+     "p": "barcos.",
+     "ini": 41.329,
+     "fin": 42.455
+    }
+   ]
+  },
+  {
+   "escena": "barco",
+   "texto": "Cuando llega el verano y la cosecha ya está sembrada, subes al barco.",
+   "ini": 43.555,
+   "fin": 48.757,
+   "palabras": [
+    {
+     "p": "Cuando",
+     "ini": 43.555,
+     "fin": 43.903
+    },
+    {
+     "p": "llega",
+     "ini": 43.938,
+     "fin": 44.228
+    },
+    {
+     "p": "el",
+     "ini": 44.252,
+     "fin": 44.298
+    },
+    {
+     "p": "verano",
+     "ini": 44.356,
+     "fin": 44.844
+    },
+    {
+     "p": "y",
+     "ini": 44.925,
+     "fin": 44.995
+    },
+    {
+     "p": "la",
+     "ini": 45.088,
+     "fin": 45.157
+    },
+    {
+     "p": "cosecha",
+     "ini": 45.227,
+     "fin": 45.807
+    },
+    {
+     "p": "ya",
+     "ini": 45.9,
+     "fin": 46.016
+    },
+    {
+     "p": "está",
+     "ini": 46.04,
+     "fin": 46.225
+    },
+    {
+     "p": "sembrada,",
+     "ini": 46.272,
+     "fin": 46.887
+    },
+    {
+     "p": "subes",
+     "ini": 47.096,
+     "fin": 47.41
+    },
+    {
+     "p": "al",
+     "ini": 47.479,
+     "fin": 47.537
+    },
+    {
+     "p": "barco.",
+     "ini": 47.595,
+     "fin": 48.756
+    }
+   ]
+  },
+  {
+   "escena": "barco",
+   "texto": "Roble, remos y una vela enorme. Con buen viento, puede superar los doce nudos.",
+   "sub": "Roble, remos y una vela enorme. Con buen viento, puede superar los 12 nudos.",
+   "ini": 49.107,
+   "fin": 54.772,
+   "palabras": [
+    {
+     "p": "Roble,",
+     "ini": 49.107,
+     "fin": 49.722
+    },
+    {
+     "p": "remos",
+     "ini": 49.896,
+     "fin": 50.291
+    },
+    {
+     "p": "y",
+     "ini": 50.407,
+     "fin": 50.442
+    },
+    {
+     "p": "una",
+     "ini": 50.512,
+     "fin": 50.663
+    },
+    {
+     "p": "vela",
+     "ini": 50.709,
+     "fin": 50.895
+    },
+    {
+     "p": "enorme.",
+     "ini": 50.918,
+     "fin": 51.499
+    },
+    {
+     "p": "Con",
+     "ini": 51.777,
+     "fin": 51.951
+    },
+    {
+     "p": "buen",
+     "ini": 51.998,
+     "fin": 52.184
+    },
+    {
+     "p": "viento,",
+     "ini": 52.23,
+     "fin": 52.59
+    },
+    {
+     "p": "puede",
+     "ini": 52.625,
+     "fin": 52.857
+    },
+    {
+     "p": "superar",
+     "ini": 52.903,
+     "fin": 53.333
+    },
+    {
+     "p": "los",
+     "ini": 53.403,
+     "fin": 53.554
+    },
+    {
+     "p": "12",
+     "ini": 53.6,
+     "fin": 53.844
+    },
+    {
+     "p": "nudos.",
+     "ini": 53.902,
+     "fin": 54.773
+    }
+   ]
+  },
+  {
+   "escena": "mito",
+   "texto": "Por cierto: tu casco nunca tuvo cuernos.",
+   "ini": 55.872,
+   "fin": 59.03,
+   "palabras": [
+    {
+     "p": "Por",
+     "ini": 55.872,
+     "fin": 56.093
+    },
+    {
+     "p": "cierto:",
+     "ini": 56.151,
+     "fin": 56.754
+    },
+    {
+     "p": "tu",
+     "ini": 56.929,
+     "fin": 57.045
+    },
+    {
+     "p": "casco",
+     "ini": 57.114,
+     "fin": 57.428
+    },
+    {
+     "p": "nunca",
+     "ini": 57.497,
+     "fin": 57.776
+    },
+    {
+     "p": "tuvo",
+     "ini": 57.822,
+     "fin": 58.02
+    },
+    {
+     "p": "cuernos.",
+     "ini": 58.066,
+     "fin": 59.03
+    }
+   ]
+  },
+  {
+   "escena": "mito",
+   "texto": "Esa imagen se inventó en mil ochocientos setenta y seis, para el vestuario de una ópera de Wagner.",
+   "sub": "Esa imagen se inventó en 1876, para el vestuario de una ópera de Wagner.",
+   "ini": 59.38,
+   "fin": 65.371,
+   "palabras": [
+    {
+     "p": "Esa",
+     "ini": 59.38,
+     "fin": 59.733
+    },
+    {
+     "p": "imagen",
+     "ini": 59.733,
+     "fin": 60.297
+    },
+    {
+     "p": "se",
+     "ini": 60.297,
+     "fin": 60.579
+    },
+    {
+     "p": "inventó",
+     "ini": 60.579,
+     "fin": 61.213
+    },
+    {
+     "p": "en",
+     "ini": 61.213,
+     "fin": 61.495
+    },
+    {
+     "p": "1876,",
+     "ini": 61.495,
+     "fin": 61.918
+    },
+    {
+     "p": "para",
+     "ini": 61.918,
+     "fin": 62.341
+    },
+    {
+     "p": "el",
+     "ini": 62.341,
+     "fin": 62.623
+    },
+    {
+     "p": "vestuario",
+     "ini": 62.623,
+     "fin": 63.398
+    },
+    {
+     "p": "de",
+     "ini": 63.398,
+     "fin": 63.68
+    },
+    {
+     "p": "una",
+     "ini": 63.68,
+     "fin": 64.032
+    },
+    {
+     "p": "ópera",
+     "ini": 64.032,
+     "fin": 64.526
+    },
+    {
+     "p": "de",
+     "ini": 64.526,
+     "fin": 64.807
+    },
+    {
+     "p": "Wagner.",
+     "ini": 64.807,
+     "fin": 65.371
+    }
+   ]
+  },
+  {
+   "escena": "noche",
+   "texto": "Por la noche, junto al fuego, escuchas historias de Odín, de Thor... y del Valhalla.",
+   "ini": 66.471,
+   "fin": 72.833,
+   "palabras": [
+    {
+     "p": "Por",
+     "ini": 66.471,
+     "fin": 66.692
+    },
+    {
+     "p": "la",
+     "ini": 66.75,
+     "fin": 66.831
+    },
+    {
+     "p": "noche,",
+     "ini": 66.901,
+     "fin": 67.214
+    },
+    {
+     "p": "junto",
+     "ini": 67.237,
+     "fin": 67.481
+    },
+    {
+     "p": "al",
+     "ini": 67.516,
+     "fin": 67.574
+    },
+    {
+     "p": "fuego,",
+     "ini": 67.632,
+     "fin": 68.12
+    },
+    {
+     "p": "escuchas",
+     "ini": 68.329,
+     "fin": 68.839
+    },
+    {
+     "p": "historias",
+     "ini": 68.874,
+     "fin": 69.315
+    },
+    {
+     "p": "de",
+     "ini": 69.362,
+     "fin": 69.408
+    },
+    {
+     "p": "Odín,",
+     "ini": 69.455,
+     "fin": 70.035
+    },
+    {
+     "p": "de",
+     "ini": 70.279,
+     "fin": 70.395
+    },
+    {
+     "p": "Thor…",
+     "ini": 70.488,
+     "fin": 71.011
+    },
+    {
+     "p": "y",
+     "ini": 71.394,
+     "fin": 71.475
+    },
+    {
+     "p": "del",
+     "ini": 71.556,
+     "fin": 71.661
+    },
+    {
+     "p": "Valhalla.",
+     "ini": 71.719,
+     "fin": 72.833
+    }
+   ]
+  },
+  {
+   "escena": "partida",
+   "texto": "Mañana zarpas hacia tierras lejanas. Algunos no volverán...",
+   "ini": 73.933,
+   "fin": 77.927,
+   "palabras": [
+    {
+     "p": "Mañana",
+     "ini": 73.933,
+     "fin": 74.328
+    },
+    {
+     "p": "zarpas",
+     "ini": 74.374,
+     "fin": 74.711
+    },
+    {
+     "p": "hacia",
+     "ini": 74.757,
+     "fin": 74.943
+    },
+    {
+     "p": "tierras",
+     "ini": 74.99,
+     "fin": 75.257
+    },
+    {
+     "p": "lejanas.",
+     "ini": 75.303,
+     "fin": 75.907
+    },
+    {
+     "p": "Algunos",
+     "ini": 76.232,
+     "fin": 76.627
+    },
+    {
+     "p": "no",
+     "ini": 76.685,
+     "fin": 76.754
+    },
+    {
+     "p": "volverán…",
+     "ini": 76.801,
+     "fin": 77.927
+    }
+   ]
+  },
+  {
+   "escena": "partida",
+   "texto": "pero sus nombres vivirán en las sagas.",
+   "ini": 78.277,
+   "fin": 80.599,
+   "palabras": [
+    {
+     "p": "pero",
+     "ini": 78.277,
+     "fin": 78.521
+    },
+    {
+     "p": "sus",
+     "ini": 78.556,
+     "fin": 78.718
+    },
+    {
+     "p": "nombres",
+     "ini": 78.788,
+     "fin": 79.101
+    },
+    {
+     "p": "vivirán",
+     "ini": 79.148,
+     "fin": 79.542
+    },
+    {
+     "p": "en",
+     "ini": 79.589,
+     "fin": 79.635
+    },
+    {
+     "p": "las",
+     "ini": 79.682,
+     "fin": 79.81
+    },
+    {
+     "p": "sagas.",
+     "ini": 79.833,
+     "fin": 80.599
+    }
+   ]
+  },
+  {
+   "escena": "final",
+   "texto": "",
+   "ini": 81.69918367346939,
+   "fin": 85.69918367346939,
+   "palabras": []
+  }
+ ]
+}

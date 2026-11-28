@@ -8,7 +8,7 @@ lo produce y cambia su estado a `programado AAAA-MM-DD`. Cuando queden menos de 
 |---|---|---|---|
 | 1 | Panadero en Pompeya (79 d. C.) | 01-panadero-pompeya | programado 2026-11-27 |
 | 2 | Gladiador en la antigua Roma — desde que te despiertas en el cuartel (ludus) hasta que entras en el Coliseo | 02-gladiador-roma | programado 2026-11-28 |
-| 3 | Vikingo en el año 900 — aldea nórdica, trabajo, navegar, vida de guerrero | 03-vikingo | pendiente |
+| 3 | Vikingo en el año 900 — aldea nórdica, trabajo, navegar, vida de guerrero | 03-vikingo | programado 2026-11-29 |
 | 4 | Faraón en el antiguo Egipto — lujos, responsabilidades, ceremonias y decisiones | 04-faraon | pendiente |
 | 5 | Campesino en la Edad Media — del amanecer en el campo al final del día en la aldea | 05-campesino-medieval | pendiente |
 | 6 | Pirata en el Caribe (1715) — a bordo, la tripulación, un día en alta mar | 06-pirata-caribe | pendiente |

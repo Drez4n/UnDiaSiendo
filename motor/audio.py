@@ -201,6 +201,11 @@ def ambiente(nombre, a, b, buf):
             st = bp(rng.normal(0, 1, l), 150, 1500) * np.exp(-tt * 40)
             st = st + np.concatenate([np.zeros(1800), st[:-1800]]) * 0.35  # eco del túnel
             add(buf, st, a + p, 0.22); p += 0.62
+    elif nombre == "olas":  # oleaje y salpicaduras contra el casco
+        s = lp(rng.normal(0, 1, n), 700, 2)
+        env = 0.45 + 0.55 * np.sin(2 * np.pi * t / 3.2) ** 2
+        s = s / (np.abs(s).max() + 1e-9) * env + bp(rng.normal(0, 1, n), 2000, 7000) * env ** 3 * 0.15
+        add(buf, s * f * 0.4, a)
     elif nombre == "viento":
         s = bp(rng.normal(0, 1, n), 200, 1200) * (0.5 + 0.5 * np.sin(2 * np.pi * 0.11 * t + 1) ** 2)
         add(buf, s * f * 0.05, a)
